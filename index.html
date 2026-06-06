@@ -1,14 +1,23 @@
-<! P1 = Yemen-Sindbad=index.html
-<! Repo= Jabri62018.github.io
-
+<!--repo=Jabr62018.github.io
+<!--file=index.html
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+<script>document.documentElement.style.background='#0a0a0f';</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abdulla Al-Jabri</title>
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0a0a0f">
+
+<script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script>
+
 <style>
+html{background:#0a0a0f}
+#shield{position:fixed;inset:0;background:#0a0a0f;z-index:99999;transition:opacity .3s}
+.page{opacity:0;transition:opacity .4s}
+
 body {
   background:#0a0a0f; 
   color:#e8e8f0;
@@ -44,6 +53,7 @@ body {
 h1,h2,h3 { 
   color:#6ae3ff; 
   margin:10px 0; 
+  text-align:center;
 }
 h1 { font-size:1.6rem; }
 h2 { font-size:1.1rem; font-weight:500; color:#e8e8f0; }
@@ -52,9 +62,10 @@ h3 {
   margin-top:40px; 
   border-bottom:1px solid #1f1f2e; 
   padding-bottom:10px; 
+  text-align:right;
 }
 ul { list-style:none; padding:0; }
-li { margin:12px 0; }
+li { margin:12px 0; text-align:right; }
 a { color:#6ae3ff; text-decoration:none; }
 a:hover { text-decoration:underline; }
 .desc { color:#8a8a9e; font-size:0.9rem; margin-right:10px; }
@@ -72,10 +83,12 @@ a:hover { text-decoration:underline; }
   background:#4dd4ff;
   text-decoration:none;
 }
-.center { text-align:center; margin-top:50px; color:#666; }
+.center { text-align:center; margin-top:50px; color:#666; font-size:0.9rem; }
 </style>
 </head>
 <body>
+<div id="shield"></div>
+<div class="page">
 
 <div class="header">
   <img src="Jabri_photo.png" alt="Abdulla Al-Jabri">
@@ -96,11 +109,44 @@ a:hover { text-decoration:underline; }
   <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.2/">4. Zx_RieOS_v1.2</a> <span class="desc">- v1.2 improved algorithms</span></li>
   <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.1/">5. Zx_RieOS_v1.1</a> <span class="desc">- v1.1 numerical validation</span></li>
   <li><a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/">6. Zx_Mother_Function_Jabri</a> <span class="desc">- Core theory</span></li>
-  <li><a href="https://jabri-web.github.io/">7. Jabri-web.github.io</a> <span class="desc">- Core theory</span></li>
-  <li><a href="https://jabri-web.github.io/jabri62018.github.io/">8. Jabri62018.github.io</a> <span class="desc">- Core theory</span></li>
-  <li><a href="https://jabri-web.github.io/Jabri_Checkout/">9. Jabri_Checkout</a> <span class="desc">- Testing scripts</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri_Checkout/">7. Jabri_Checkout</a> <span class="desc">- Testing scripts</span></li>
 </ul>
 
 <h3>Published Papers with DOI</h3>
 <ul>
   <li><a href="https://doi.org/10.5281/zenodo.20139904">Riemann Hypothesis</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20145279">P vs NP</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20148344">Yang-Mills Mass Gap</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20149618">Navier-Stokes</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20145337">Zx_RiemannOS v1.3</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20114317">Jabri Identity</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20100622">Zx_RieOS v1.2 Gold</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20070594">Zx_RieOS v1.1</a></li>
+</ul>
+
+<h3>Contact</h3>
+<ul>
+  <li><a href="https://orcid.org/0009-0001-1319-3622">ORCID: 0009-0001-1319-3622</a></li>
+  <li><a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a></li>
+  <li><a href="https://jabri62018.github.io">Website: jabri62018.github.io</a></li>
+</ul>
+
+<div class="center">
+  <p>CC BY 4.0 | Jabri Identity: Z + C + A = 1</p>
+  <p>From Sana'a to the Universe 🇾🇪</p>
+</div>
+
+</div>
+</div>
+
+<script>
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    document.getElementById('shield').style.opacity='0';
+    document.querySelector('.page').style.opacity='1';
+    setTimeout(()=>document.getElementById('shield').remove(),300);
+  },100);
+});
+</script>
+</body>
+</html>
