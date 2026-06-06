@@ -6,51 +6,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdulla Al-Jabri - Yemen Sindbad</title>
-<link rel="manifest" href="./manifest.json">
-<meta name="theme-color" content="#0a0a0f">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
+<title>Abdulla Al-Jabri</title>
 <style>
-/* ذبح البيضاء قبل تولد */
-html{background:#0a0a0f}
-#shield{position:fixed;inset:0;background:#0a0a0f;z-index:99999}
-body{margin:0;padding:0;background:#0a0a0f;color:#e8e8f0;font-family:"Tajawal",sans-serif;line-height:1.8}
-.page{opacity:0;transition:opacity .4s;background:#0a0a0f;min-height:100svh}
+body {
+  background:#0a0a0f; 
+  color:#e8e8f0;
+  font-family: "Tajawal", sans-serif;
+  padding: 0; 
+  margin: 0;
+  line-height: 1.8;
+}
 
-.header{text-align:center;padding:40px 20px;background:#0a0a0a;margin-bottom:40px;border-bottom:1px solid #1f1f2e}
-.header img{width:140px;height:140px;border-radius:50%;border:4px solid #6ae3ff;object-fit:cover;margin-bottom:15px}
-.container{max-width:700px;margin:0 auto;padding:0 20px 30px 20px}
-h1,h2,h3{color:#6ae3ff;margin:10px 0;text-align:center}
-h1{font-size:1.6rem}
-h2{font-size:1.1rem;font-weight:500;color:#e8e8f0}
-h3{font-size:1.2rem;margin-top:40px;border-bottom:1px solid #1f1f2e;padding-bottom:10px;text-align:right}
-ul{list-style:none;padding:0}
-li{margin:12px 0;text-align:right}
-a{color:#6ae3ff;text-decoration:none}
-a:hover{text-decoration:underline}
-.desc{color:#8a8a9e;font-size:0.9rem;margin-right:10px}
-.badge{display:inline-block;background:#6ae3ff;color:#0a0a0f;padding:8px 20px;border-radius:6px;font-weight:600;margin-top:15px;text-decoration:none}
-.center{text-align:center;margin-top:50px;color:#666;font-size:0.9rem}
+.header {
+  text-align:center; 
+  padding: 40px 20px;
+  background: #0a0a0a;
+  margin-bottom:40px;
+  border-bottom: 1px solid #1f1f2e;
+}
+
+.header img {
+  width: 140px; 
+  height: 140px; 
+  border-radius: 50%; 
+  border: 4px solid #6ae3ff; 
+  object-fit: cover; 
+  margin-bottom: 15px;
+}
+
+.container { 
+  max-width: 700px; 
+  margin: 0 auto; 
+  padding: 0 20px 30px 20px;
+}
+
+h1,h2,h3 { 
+  color:#6ae3ff; 
+  margin:10px 0; 
+}
+h1 { font-size:1.6rem; }
+h2 { font-size:1.1rem; font-weight:500; color:#e8e8f0; }
+h3 { 
+  font-size:1.2rem; 
+  margin-top:40px; 
+  border-bottom:1px solid #1f1f2e; 
+  padding-bottom:10px; 
+}
+ul { list-style:none; padding:0; }
+li { margin:12px 0; }
+a { color:#6ae3ff; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.desc { color:#8a8a9e; font-size:0.9rem; margin-right:10px; }
+.badge {
+  display:inline-block;
+  background:#6ae3ff;
+  color:#0a0a0f;
+  padding:8px 20px;
+  border-radius:6px;
+  font-weight:600;
+  margin-top:15px;
+  text-decoration:none;
+}
+.badge:hover {
+  background:#4dd4ff;
+  text-decoration:none;
+}
+.center { text-align:center; margin-top:50px; color:#666; }
 </style>
-
-<script>
-// تسجيل Service Worker للاوفلاين
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js');
-// اخفاء الدرع بعد التحميل
-window.addEventListener('load',function(){
-  setTimeout(()=>{
-    document.getElementById('shield').style.opacity='0';
-    document.querySelector('.page').style.opacity='1';
-    setTimeout(()=>document.getElementById('shield').remove(),300);
-  },100);
-});
-</script>
 </head>
 <body>
-<div id="shield"></div>
 
-<div class="page">
 <div class="header">
   <img src="Jabri_photo.png" alt="Abdulla Al-Jabri">
   <h1>Eng. Abdulla Mohammed Nasser Al-Jabri</h1>
@@ -61,16 +86,16 @@ window.addEventListener('load',function(){
 </div>
 
 <div class="container">
-<h3>المستودعات الرئيسية / Main Repositories</h3>
+
+<h3>Main Repositories / المستودعات الرئيسية</h3>
 <ul>
-  <li>1. <a href="https://jabri-web.github.io/jabri_lab/">jabri_lab</a> <span class="desc">- Zx function & Millennium Problems</span></li>
-  <li>2. <a href="https://jabri-web.github.io/Jabri_Nobble/">Jabri_Nobble</a> <span class="desc">- Zx_RiemannOS archive</span></li>
-  <li>3. <a href="https://jabri-web.github.io/Jabri-RiemannOS/">Zx_RiemannOS</a> <span class="desc">- Riemann hypothesis framework</span></li>
-  <li>4. <a href="https://jabri-web.github.io/Zx_RieOS_v1.2/">Zx_RieOS_v1.2</a> <span class="desc">- v1.2 improved algorithms</span></li>
-  <li>5. <a href="https://jabri-web.github.io/Zx_RieOS_v1.1/">Zx_RieOS_v1.1</a> <span class="desc">- v1.1 numerical validation</span></li>
-  <li>6. <a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/">Zx_Mother_Function_Jabri</a> <span class="desc">- Core theory</span></li>
-  <li>7. <a href="https://jabri-web.github.io/jabri-web.github.io/">jabri-web.github.io</a> <span class="desc">- Core theory</span></li>
-  <li>8. <a href="https://jabri-web.github.io/Jabri_Checkout/">Jabri_Checkout</a> <span class="desc">- Testing scripts</span></li>
+  <li><a href="https://jabri-web.github.io/jabri_lab/">1. jabri_lab</a> <span class="desc">- Zx function & Millennium Problems</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri_Nobble/">2. Jabri_Nobble</a> <span class="desc">- Zx_RiemannOS archive</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri-RiemannOS/">3. Zx_RiemannOS</a> <span class="desc">- Riemann hypothesis framework</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.2/">4. Zx_RieOS_v1.2</a> <span class="desc">- v1.2 improved algorithms</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.1/">5. Zx_RieOS_v1.1</a> <span class="desc">- v1.1 numerical validation</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/">6. Zx_Mother_Function_Jabri</a> <span class="desc">- Core theory</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri_Checkout/">7. Jabri_Checkout</a> <span class="desc">- Testing scripts</span></li>
 </ul>
 
 <h3>Published Papers with DOI</h3>
@@ -89,15 +114,15 @@ window.addEventListener('load',function(){
 <ul>
   <li><a href="https://orcid.org/0009-0001-1319-3622">ORCID: 0009-0001-1319-3622</a></li>
   <li><a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a></li>
-  <li>Website: jabri62018.github.io</li>
-  <li>Website: jabri-web.github.io</li>
+  <li><a href="https://jabri62018.github.io">Website: jabri62018.github.io</a></li>
 </ul>
 
 <div class="center">
   <p>CC BY 4.0 | Jabri Identity: Z + C + A = 1</p>
   <p>From Sana'a to the Universe 🇾🇪</p>
 </div>
-</div>
+
 </div>
 </body>
+</html>
 </html>
