@@ -1,0 +1,15 @@
+{
+  "name": "Jabri6218.github.io",
+  "short_name": "J6218",
+  "start_url": "./index.html",
+  "display": "standalone", 
+  "background_color": "#000",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "./Jabri_photo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
