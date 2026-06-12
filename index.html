@@ -3,121 +3,163 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>سندباد اليمن - البوابة العامة</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+<title>بوابة عبدالله عبدالله | Abdullah Gateway - P4</title>
 <style>
-* {box-sizing:border-box}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-  margin:0; padding:15px; font-family:'Cairo',Tahoma,sans-serif;
-  background:#f5f7fa; color:#000; min-height:100svh
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Cairo', 'Segoe UI', Tahoma, Arial;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    transition: 0.3s;
 }
-header {
-  background:linear-gradient(135deg,#0a3d62,#1e6f9f); color:white; text-align:center;
-  padding:25px 10px; border-radius:15px; margin-bottom:20px
+body.en { direction: ltr; font-family: 'Segoe UI', Arial; }
+.lang-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ff3333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
 }
-header img {
-  width:80px; height:80px; border-radius:50%; border:3px solid #00ff88;
-  display:block; margin:0 auto 15px; object-fit:cover
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+    letter-spacing: 3px;
 }
-h2 {text-align:center; color:#0a3d62; margin:20px 0 10px; font-size:22px}
-.group {margin:20px 0; padding:15px; background:white; border-radius:12px; border:2px solid #ddd; box-shadow:0 2px 8px rgba(0,0,0,0.1)}
-.group-title {font-size:18px; font-weight:bold; color:#c62828; text-align:center; margin-bottom:12px}
-.repo-btn {
-  display:flex; justify-content:space-between; align-items:center; gap:10px;
-  width:100%; margin:10px 0; padding:18px;
-  background:#000; color:#fff; font-size:16px; font-weight:bold;
-  border-radius:12px; text-decoration:none; transition:0.3s; border:2px solid #000
-}
-.repo-btn:hover {
-  background:linear-gradient(135deg,#00ffc8,#00b894); border-color:#00ffc8;
-  transform:translateY(-2px)
-}
-.repo-name {flex:1; text-align:right}
-.repo-id {font-size:20px; opacity:0.9; min-width:30px; text-align:left}
-.current-btn {
-  background:linear-gradient(135deg,#ff6b6b,#c62828); border-color:#ff6b6b;
-  animation: pulse 2s infinite
+.logo span { color: #ff3333; }
+h1 { font-size: 24px; margin-bottom: 10px; color: #ccc; }
+h1 small { display: block; font-size: 16px; color: #888; margin-top: 5px; }
+.current {
+    background: #ff3333;
+    border: 2px solid #ff6666;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 450px;
+    animation: pulse 2s infinite;
 }
 @keyframes pulse {
- 0%,100%{box-shadow:0 0 0 0 rgba(255,107,107,0.4)}
- 50%{box-shadow:0 0 0 12px rgba(255,107,107,0)}
+    0%, 100% { box-shadow: 0 0 20px #ff3333; }
+    50% { box-shadow: 0 0 40px #ff6666; }
 }
-.hidden {display:none!important}
-footer {background:#0a3d62; color:white; text-align:center; padding:15px; margin-top:25px; border-radius:12px; font-size:14px}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 40px auto;
+}
+.btn {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    color: #fff;
+    padding: 25px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: block;
+}
+.btn:hover {
+    background: #2a2a2a;
+    border-color: #ff3333;
+    transform: translateY(-3px);
+}
+.section-title {
+    font-size: 22px;
+    margin: 50px 0 20px;
+    color: #ff3333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.datetime {
+    margin-top: 50px;
+    color: #666;
+    font-size: 14px;
+}
+.ar, .en { display: inline; }
+body.en .ar { display: none; }
+body:not(.en) .en { display: none; }
 </style>
 </head>
 <body>
 
-<header>
-<img src="Yemen-bird.png" alt="طائر اليمن">
-<h1 style="margin:0; font-size:24px">Republic of Yemen</h1>
-<p style="margin:5px 0 0 0; opacity:0.9">Z + C + A = 1 | Riemann zeta & Cosmology</p>
-</header>
+<button class="lang-btn" onclick="toggleLang()">
+    <span class="ar">EN</span>
+    <span class="en">عربي</span>
+</button>
 
-<h2>👁️ سندباد اليمن - البوابة العامة 1→10 👁️</h2>
-<p style="text-align:center; color:#555; font-weight:bold; margin-bottom:20px">م/عبدالله الجبري</p>
+<div class="logo">Z<span>+</span>C<span>+</span>A<span>=</span>1</div>
+<h1>
+    <span class="ar">بوابة عبدالله عبدالله الرئيسية</span>
+    <span class="en">Abdullah Abdullah Main Gateway</span>
+    <small>
+        <span class="ar">P4 - بوابة المشاريع 1→10</span>
+        <span class="en">P4 - Projects Gateway 1→10</span>
+    </small>
+</h1>
 
-<!-- زر الريبو المفتوحة - يظهر بس اذا الريبو مفتوح -->
-<a id="open-repo-btn" href="#" class="repo-btn current-btn hidden">جاري الكشف...</a>
-
-<!-- 1-10 الشاشة العامة -->
-<div class="group">
-<div class="group-title">المشاريع الأساسية 1→10</div>
-<div id="repos-1-10"></div>
+<div class="current">
+    <span class="ar">الصفحة الحالية<br><b>جاري الكشف عن الشفرة...</b></span>
+    <span class="en">Current Page<br><b>Decoding in Progress...</b></span>
 </div>
 
-<footer>
-<p style="margin:5px">© 2026 Yemen Sindbad - جميع الحقوق محفوظة</p>
-<p style="margin:5px">صنع بحب في اليمن 🇾🇪</p>
-</footer>
+<h2 class="section-title">
+    <span class="ar">المشاريع الأساسية 1→10</span>
+    <span class="en">Core Projects 1→10</span>
+</h2>
+<div class="grid">
+    <a href="Page1.html" class="btn">1. <span class="ar">سندباد اليمن</span><span class="en">Sindbad Yemen</span></a>
+    <a href="Page2.html" class="btn">2. <span class="ar">طائر اليمن</span><span class="en">Yemen Bird</span></a>
+    <a href="Page3.html" class="btn">3. <span class="ar">عنكبوت اليمن</span><span class="en">Yemen Spider</span></a>
+    <a href="Page4.html" class="btn">4. <span class="ar">مكتبي وبحوثي</span><span class="en">My Office & Research</span></a>
+    <a href="Page5.html" class="btn">5. <span class="ar">مشروع 5</span><span class="en">Project 5</span></a>
+    <a href="Page6.html" class="btn">6. <span class="ar">مشروع 6</span><span class="en">Project 6</span></a>
+    <a href="Page7.html" class="btn">7. <span class="ar">مشروع 7</span><span class="en">Project 7</span></a>
+    <a href="Page8.html" class="btn">8. <span class="ar">مشروع 8</span><span class="en">Project 8</span></a>
+    <a href="Page9.html" class="btn">9. <span class="ar">مشروع 9</span><span class="en">Project 9</span></a>
+    <a href="Page10.html" class="btn">10. <span class="ar">مشروع 10</span><span class="en">Project 10</span></a>
+</div>
+
+<h2 class="section-title">
+    <span class="ar">مكتبي وبحوثي</span>
+    <span class="en">My Office & Research</span>
+</h2>
+<div class="grid">
+    <a href="Page4.html" class="btn"><span class="ar">المكتب الرئيسي</span><span class="en">Main Office</span></a>
+    <a href="Page4.html#sandas" class="btn"><span class="ar">سندس النظرية</span><span class="en">Sandas Theory</span></a>
+    <a href="Page4.html#library" class="btn"><span class="ar">المكتبة اليمنية</span><span class="en">Yemeni Library</span></a>
+    <a href="Page1.html" class="btn"><span class="ar">سندباد اليمن</span><span class="en">Sindbad Yemen</span></a>
+</div>
+
+<div class="datetime" id="dt"></div>
 
 <script>
-try {
-  const X = "jabri-web.github.io";
-  let Y = window.location.hostname.toLowerCase().replace('.github.io','');
-
-  // الشاشة العامة 1→10 - الكل ينادي ABOUT.html
-  const repos = {
-    "jabri62018.github.io": {id:1, name:"سندباد اليمن", url:`https://${X}/Jabri62018.github.io/ABOUT.html`},
-    "zx_rieos_v1.2": {id:2, name:"طائر اليمن", url:`https://${X}/Zx_RieOS_v1.2/ABOUT.html`},
-    "zx_mother_function_jabri": {id:3, name:"عنكبوت اليمن", url:`https://${X}/Zx_Mother_Function_Jabri/ABOUT.html`},
-    "jabri-web": {id:4, name:"البوابة الرئيسية", url:`https://${X}/`},
-    "jabri_nobble": {id:5, name:"أرشيف نوبل", url:`https://${X}/Jabri_Nobble/ABOUT.html`},
-    "jabri_lab": {id:6, name:"مختبر الجبري", url:`https://${X}/jabri_lab/ABOUT.html`},
-    "zx_rieos_v1.1": {id:7, name:"RieOS v1.1", url:`https://${X}/Zx_RieOS_v1.1/ABOUT.html`},
-    "jabri_riemannos": {id:8, name:"RiemannOS", url:`https://${X}/Jabri-RiemannOS/ABOUT.html`},
-    "jabri_checkout": {id:9, name:"Jabri Checkout", url:`https://${X}/Jabri_Checkout/ABOUT.html`},
-    "jabri-web-2": {id:10, name:"Jabri-web", url:`https://${X}/Jabri-web/ABOUT.html`}
-  };
-
-  const btn = document.getElementById('open-repo-btn');
-
-  // الشرط: الزر يفعل بس اذا الريبو مفتوح Y!=X والريبو موجود
-  if (Y!== "jabri-web" && Y!== "" && repos[Y]) {
-    btn.classList.remove('hidden');
-    btn.href = "ABOUT.html"; // نفس المجلد
-    btn.innerHTML = `<span class="repo-name">📍 ${repos[Y].name} - الريبو المفتوحة</span><span class="repo-id">${repos[Y].id}</span>`;
-  }
-
-  // بناء 1-10
-  const container = document.getElementById('repos-1-10');
-  for(let i=1; i<=10; i++) {
-    const key = Object.keys(repos).find(k => repos[k].id === i);
-    if(key && key!== Y) {
-      const r = repos[key];
-      const a = document.createElement('a');
-      a.href = r.url; // كلهم ABOUT.html
-      a.target = "_blank";
-      a.className = "repo-btn";
-      a.innerHTML = `<span class="repo-name">${r.name}</span><span class="repo-id">${r.id}</span>`;
-      container.appendChild(a);
-    }
-  }
-
-} catch(e) {
-  console.error(e);
-  document.body.innerHTML += `<p style="color:red; text-align:center; margin-top:20px">خطأ: ${e.message}</p>`;
+function toggleLang() {
+    document.body.classList.toggle('en');
+    localStorage.setItem('lang', document.body.classList.contains('en') ? 'en' : 'ar');
 }
+if(localStorage.getItem('lang') === 'en') document.body.classList.add('en');
+
+function updateTime() {
+    const now = new Date();
+    const lang = document.body.classList.contains('en') ? 'en-US' : 'ar-EG';
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+    document.getElementById('dt').innerHTML = now.toLocaleDateString(lang, options);
+}
+updateTime();
+setInterval(updateTime, 60000);
 </script>
 
 </body>
