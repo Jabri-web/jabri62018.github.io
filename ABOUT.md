@@ -21,14 +21,32 @@
 
 ## 📖 About This Repository
 
-This repository is the **primary gateway (P1 Page)** to the entire Jabri-web research ecosystem. It acts as the central nervous system, aggregating and linking to all sub-projects, experimental operating systems (RieOS), and theoretical frameworks.
+This repository serves as the **primary gateway (P1 Page)** to the entire Jabri-web research ecosystem. It provides a unified index that aggregates and links to all sub-projects, experimental operating systems (RieOS), and theoretical frameworks. Think of it as the central nervous system of the Jabri-web universe.
 
-**What you'll find here:**
-- **Unified Navigation:** A structured index that guides researchers and visitors to all active repositories, from `Zx_RieOS_v1.2` to `Jabri_RiemannOS`.
+**Key Features:**
+- **Centralized Navigation:** A structured index that guides researchers and visitors to all active repositories, from `Zx_RieOS_v1.2` to `Jabri_RiemannOS`.
 - **Research Index:** The core starting point for exploring studies on the **Zx Mother Function**, the **Millennium Problems** (Riemann Hypothesis, P vs NP, Yang-Mills, Navier-Stokes), and **Yemeni heritage documentation**.
 - **Publication Hub:** Direct links to all published papers with their DOIs, ensuring easy citation and access to the theoretical proofs behind the Al-Jabri Identity (`Z + C + A = 1`).
 
-This page is designed to be the first bookmark for anyone wanting to dive deep into the intersection of computational number theory and theoretical physics.
+---
+
+## 🗂️ Repository Structure & Contents
+
+This repository is organized to maximize accessibility and clarity. Below is the internal structure and the purpose of each component:
+
+| Directory / File | Description |
+| :--- | :--- |
+| `/Image/` | Contains visual assets used across the repository, including `Jabri-photo.png` (the author's profile picture) and diagram files like `Zx_Equations.png` and `Zx_Eq_figure.png`. |
+| `/README.md` | The main landing page of the repository. It provides an overview of the project, links to key repositories, and a summary of the research focus. |
+| `/ABOUT.md` | (This file) – A detailed explanation of the repository's purpose, structure, and contents. It serves as a deeper dive into the project's background and organization. |
+| `/ABOUT-AR.md` | The Arabic version of this file, ensuring accessibility for Arabic-speaking researchers and visitors. |
+| `/_layouts/` | (If present) – Contains Jekyll layout templates used for the GitHub Pages site, providing consistent styling across all pages. |
+| `/docs/` | (Optional) – May contain additional documentation, guides, or supplementary materials related to the research. |
+| `/_data/` | (Optional) – Could include structured data files (e.g., JSON) used to generate dynamic content. |
+| `/_includes/` | (Optional) – Reusable components for the Jekyll site. |
+| `/_config.yml` | (If present) – Configuration file for GitHub Pages and Jekyll, defining site settings, plugins, and build options. |
+| `/.github/` | Contains GitHub-specific files, such as issue templates, pull request templates, and CI/CD workflows. |
+| `/LICENSE` | The full text of the CC BY 4.0 license, outlining the terms of use and attribution requirements. |
 
 ---
 
