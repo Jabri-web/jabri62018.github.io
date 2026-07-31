@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>عبدالله الجبري - حول</title>
+<title>Abdulla Al-Jabri - ABOUT</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 <style>
 body { background:#0a0a0f; color:#e8e8f0; font-family: "Tajawal", sans-serif; padding: 0; margin: 0; line-height: 1.8; }
@@ -21,7 +21,7 @@ ul { list-style:none; padding:0; }
 li { margin:12px 0; }
 a { color:#6ae3ff; text-decoration:none; }
 a:hover { text-decoration:underline; }
-.desc { color:#8a8a9e; font-size:0.9rem; margin-right:10px; }
+.desc { color:#8a8a9e; font-size:0.9rem; margin-left:10px; }
 .badge { display:inline-block; background:#6ae3ff; color:#0a0a0f; padding:8px 20px; border-radius:6px; font-weight:600; margin-top:15px; text-decoration:none; }
 .badge:hover { background:#4dd4ff; text-decoration:none; }
 .center { text-align:center; margin-top:50px; color:#666; }
@@ -30,80 +30,75 @@ a:hover { text-decoration:underline; }
 </head>
 <body>
 
-<!-- ===== شريط تبديل اللغة (موحد على .html) ===== -->
+<!-- ===== Language Switch Bar ===== -->
 <div class="lang-switch">
-    <a href="./ABOUT.html" class="inactive">🇬🇧 English (Default)</a>
-    <a href="./ABOUT-AR.html">🇾🇪 العربية</a>
+    <a href="./ABOUT.md">🇬🇧 English (Default)</a>
+    <a href="./ABOUT-AR.html" class="inactive">🇾🇪 العربية</a>
 </div>
 
 <div class="repo-name">
-    <h3>المستودع: jabri62018.github.io</h3>
+    <h3>Repository: jabri62018.github.io</h3>
 </div>
 
 <div class="header">
   <img src="Image/Jabri-photo.png" alt="Abdulla Al-Jabri">
-  <h1>م. عبدالله محمد ناصر الجبري</h1>
-  <h2>باحث مستقل في الرياضيات والفيزياء النظرية</h2>
-  <h2>هوية الجبري: Z + C + A = 1</h2>
-  <a href="https://github.com/Jabri-web" class="badge">زيارة ملف GitHub</a>
+  <h1>Eng. Abdulla Mohammed Nasser Al-Jabri</h1>
+  <h2>Independent Researcher in Mathematics & Theoretical Physics</h2>
+  <h2>Identity: Z + C + A = 1</h2>
+  <a href="https://github.com/Jabri-web" class="badge">Visit GitHub Profile</a>
 </div>
 
 <div class="container">
 
-<h3>حول هذا المستودع</h3>
-<p>هذه هي البوابة الرئيسية P1 لجميع مشاريع أبحاث الجبري. تعمل كمركز رئيسي يربط جميع أبحاث دالة Zx، وتجارب نظام Riemann OS، وأبحاث مسائل الألفية.</p>
+<h3>About This Repository</h3>
+<p>This is the Main Portal and P1 Page for all Al-Jabri research projects. It serves as the central hub linking to all Zx function research, Riemann OS experiments, and Millennium Problems research.</p>
 
-<h3>المستودعات الرئيسية</h3>
+<h3>Main Repositories</h3>
 <ul>
-  <li><a href="https://jabri-web.github.io/jabri62018.github.io/">1. Jabri6218.github.io</a> <span class="desc">- المركز الرئيسي والصفحة P1</span></li>
-  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.2/">2. Zx_RieOS_v1.2</a> <span class="desc">- v1.2 خوارزميات محسنة</span></li>
-  <li><a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/">3. Zx_Mother_Function_Jabri</a> <span class="desc">- النظرية الأساسية ودالة Zx</span></li>
-  <li><a href="https://jabri-web.github.io/">4. Jabri-web.github.io</a> <span class="desc">- مركز المنظمة</span></li>
-  <li><a href="https://jabri-web.github.io/Jabri_Nobble/">5. Jabri_Nobble</a> <span class="desc">- أرشيف Zx_RiemannOS</span></li>
-  <li><a href="https://jabri-web.github.io/jabri_lab/">6. jabri_lab</a> <span class="desc">- دالة Zx ومسائل الألفية</span></li>
-  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.1/">7. Zx_RieOS_v1.1</a> <span class="desc">- v1.1 التحقق العددي</span></li>
-  <li><a href="https://jabri-web.github.io/Jabri-RiemannOS/">8. Jabri_RiemannOS</a> <span class="desc">- إطار فرضية ريمان v1.3</span></li>
-  <li><a href="https://jabri-web.github.io/Jabri_Checkout/">9. Jabri_Checkout</a> <span class="desc">- سكربتات الاختبار</span></li>
+  <li><a href="https://jabri-web.github.io/jabri62018.github.io/">1. Jabri6218.github.io</a> <span class="desc">- Main Hub & P1 Page</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.2/">2. Zx_RieOS_v1.2</a> <span class="desc">- v1.2 Improved Algorithms</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/">3. Zx_Mother_Function_Jabri</a> <span class="desc">- Core Theory & Zx Function</span></li>
+  <li><a href="https://jabri-web.github.io/">4. Jabri-web.github.io</a> <span class="desc">- Organization Hub</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri_Nobble/">5. Jabri_Nobble</a> <span class="desc">- Zx_RiemannOS Archive</span></li>
+  <li><a href="https://jabri-web.github.io/jabri_lab/">6. jabri_lab</a> <span class="desc">- Zx Function & Millennium Problems</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.1/">7. Zx_RieOS_v1.1</a> <span class="desc">- v1.1 Numerical Validation</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri-RiemannOS/">8. Jabri_RiemannOS</a> <span class="desc">- Riemann Hypothesis Framework v1.3</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri_Checkout/">9. Jabri_Checkout</a> <span class="desc">- Testing Scripts</span></li>
 </ul>
 
-<h3>Jabri_lab - امتدادات مسائل الألفية</h3>
+<h3>Jabri_lab - Millennium Problems Extensions</h3>
 <ul>
-  <li><a href="https://doi.org/10.5281/zenodo.20139904">6-1. Jabri_Riemann</a> <span class="desc">- فرضية ريمان</span></li>
-  <li><a href="https://doi.org/10.5281/zenodo.20145279">6-2. Jabri_np</a> <span class="desc">- P مقابل NP</span></li>
-  <li><a href="https://doi.org/10.5281/zenodo.20148344">6-3. Jabri_gap</a> <span class="desc">- فجوة كتلة Yang-Mills</span></li>
-  <li><a href="https://doi.org/10.5281/zenodo.20114317">6-4. Jabri_Identity</a> <span class="desc">- هوية الجبري Z+C+A=1</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20139904">6-1. Jabri_Riemann</a> <span class="desc">- Riemann Hypothesis</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20145279">6-2. Jabri_np</a> <span class="desc">- P vs NP</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20148344">6-3. Jabri_gap</a> <span class="desc">- Yang-Mills Mass Gap</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20114317">6-4. Jabri_Identity</a> <span class="desc">- Jabri Identity Z+C+A=1</span></li>
   <li><a href="https://doi.org/10.5281/zenodo.20149618">6-5. Jabri_Navier</a> <span class="desc">- Navier-Stokes</span></li>
   <li><a href="#">6-6. Jabri_Birch</a> <span class="desc">- Birch & Swinnerton-Dyer</span></li>
-  <li><a href="#">6-7. Jabri_Hodge</a> <span class="desc">- حدسية Hodge</span></li>
+  <li><a href="#">6-7. Jabri_Hodge</a> <span class="desc">- Hodge Conjecture</span></li>
 </ul>
 
-<h3 style="color:#6ae3ff; text-align:center; margin-top:40px">الأوراق المنشورة مع DOI</h3>
+<h3 style="color:#6ae3ff; text-align:center; margin-top:40px">Published Papers with DOI</h3>
 <ul style="list-style:none; padding:0; text-align:center">
-  <li><a href="https://doi.org/10.5281/zenodo.20139904">فرضية ريمان</a></li>
-  <li><a href="https://doi.org/10.5281/zenodo.20145279">P مقابل NP</a></li>
-  <li><a href="https://doi.org/10.5281/zenodo.20148344">فجوة كتلة Yang-Mills</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20139904">Riemann Hypothesis</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20145279">P vs NP</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20148344">Yang-Mills Mass Gap</a></li>
   <li><a href="https://doi.org/10.5281/zenodo.20149618">Navier Stokes</a></li>
-  <li><a href="https://doi.org/10.5281/zenodo.20114317">هوية الجبري</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20114317">Jabri Identity</a></li>
   <li><a href="https://github.com/jabri62018/Jabri_RiemannOS">Zx_RiemannOS v1.3</a></li>
   <li><a href="https://github.com/jabri62018/Zx_RieOS_v1.2">Zx_RieOS v1.2 Gold</a></li>
   <li><a href="https://github.com/jabri62018/Zx_RieOS_v1.1">Zx_RieOS v1.1</a></li>
 </ul>
 
-<h3 style="color:#6ae3ff; text-align:center; margin-top:40px">DOI والاستشهاد</h3>
-<p style="text-align:center;">
-  <strong>DOI:</strong> <a href="https://doi.org/10.5281/zenodo.20403864">10.5281/zenodo.20403864</a>
-</p>
-
-<h3 style="color:#6ae3ff; text-align:center; margin-top:40px">للتواصل</h3>
+<h3 style="color:#6ae3ff; text-align:center; margin-top:40px">Contact</h3>
 <p style="text-align:center; line-height:1.8">
   ORCID: <a href="https://orcid.org/0009-0003-3319-3822">0009-0003-3319-3822</a><br>
-  البريد: <a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a><br>
-  الموقع: <a href="https://jabri-com.vercel.app/">jabri-com.vercel.app</a>
+  Email: <a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a><br>
+  Website: <a href="https://jabri-com.vercel.app/">jabri-com.vercel.app</a>
 </p>
 
 <hr style="border:none; border-top:1px solid #30363d; margin:40px 0">
 
-<p class="center">الترخيص: CC BY 4.0 | هوية الجبري, Z + C + A = 1<br>من صنعاء إلى الكون 🇾🇪</p>
+<p class="center">License: CC BY 4.0 | Jabri Identity, Z + C + A = 1<br>From Sana'a to the Universe 🇾🇪</p>
 
 </div>
 </body>
