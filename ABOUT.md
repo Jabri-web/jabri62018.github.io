@@ -10,25 +10,32 @@
 
 ---
 
-# [Repository Name]
+# 📌 Repository: jabri62018.github.io
 
-**Short Description** – _Brief description of the repository._
+**The Main Portal (P1) – Central Index for the Jabri-web Ecosystem**
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.XXXXXX-blue)](https://doi.org/10.5281/zenodo.XXXXXX)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-6ae3ff?style=flat&logo=github)](https://jabri-web.github.io/REPO-NAME/)
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20403864-blue)](https://doi.org/10.5281/zenodo.20403864)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-6ae3ff?style=flat&logo=github)](https://jabri-web.github.io/jabri62018.github.io/)
 
 ---
 
 ## 📖 About This Repository
 
-[Detailed description of the repository, its purpose, and significance.]
+This repository is the **primary gateway (P1 Page)** to the entire Jabri-web research ecosystem. It acts as the central nervous system, aggregating and linking to all sub-projects, experimental operating systems (RieOS), and theoretical frameworks.
+
+**What you'll find here:**
+- **Unified Navigation:** A structured index that guides researchers and visitors to all active repositories, from `Zx_RieOS_v1.2` to `Jabri_RiemannOS`.
+- **Research Index:** The core starting point for exploring studies on the **Zx Mother Function**, the **Millennium Problems** (Riemann Hypothesis, P vs NP, Yang-Mills, Navier-Stokes), and **Yemeni heritage documentation**.
+- **Publication Hub:** Direct links to all published papers with their DOIs, ensuring easy citation and access to the theoretical proofs behind the Al-Jabri Identity (`Z + C + A = 1`).
+
+This page is designed to be the first bookmark for anyone wanting to dive deep into the intersection of computational number theory and theoretical physics.
 
 ---
 
 ## 🔗 Quick Links
 
-- **GitHub Pages:** [https://jabri-web.github.io/REPO-NAME/](https://jabri-web.github.io/REPO-NAME/)
-- **DOI:** [10.5281/zenodo.XXXXXX](https://doi.org/10.5281/zenodo.XXXXXX) _(if available)_
+- **Live Page:** [https://jabri-web.github.io/jabri62018.github.io/](https://jabri-web.github.io/jabri62018.github.io/)
+- **DOI:** [10.5281/zenodo.20403864](https://doi.org/10.5281/zenodo.20403864)
 - **Main Website:** [https://jabri-com.vercel.app](https://jabri-com.vercel.app)
 - **Author:** [Eng. Abdulla Mohammed Nasser Al-Jabri](https://github.com/Jabri-web)
 
