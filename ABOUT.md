@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdulla Al-Jabri</title>
+<title>Abdulla Al-Jabri - ABOUT</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 <style>
 body { background:#0a0a0f; color:#e8e8f0; font-family: "Tajawal", sans-serif; padding: 0; margin: 0; line-height: 1.8; }
+.lang-switch { text-align:center; padding: 15px; background: #161b22; border-bottom: 1px solid #30363d; }
+.lang-switch a { background: #6ae3ff; color: #0a0a0f; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; margin: 0 5px; display: inline-block; }
+.lang-switch a.inactive { background: transparent; color: #c9d1d9; border: 1px solid #30363d; }
 .header { text-align:center; padding: 40px 20px; background: #0a0a0a; margin-bottom:40px; border-bottom: 1px solid #1f1f2e; }
 .header img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #6ae3ff; object-fit: cover; margin-bottom: 15px; }
 .container { max-width: 700px; margin: 0 auto; padding: 0 20px 30px 20px; }
@@ -18,26 +21,39 @@ ul { list-style:none; padding:0; }
 li { margin:12px 0; }
 a { color:#6ae3ff; text-decoration:none; }
 a:hover { text-decoration:underline; }
-.desc { color:#8a8a9e; font-size:0.9rem; margin-right:10px; }
+.desc { color:#8a8a9e; font-size:0.9rem; margin-left:10px; }
 .badge { display:inline-block; background:#6ae3ff; color:#0a0a0f; padding:8px 20px; border-radius:6px; font-weight:600; margin-top:15px; text-decoration:none; }
 .badge:hover { background:#4dd4ff; text-decoration:none; }
 .center { text-align:center; margin-top:50px; color:#666; }
+.repo-name { background: #161b22; padding: 10px; border-radius: 8px; text-align: center; margin: 20px 0; border: 1px solid #30363d; }
 </style>
 </head>
 <body>
 
+<!-- ===== Language Switch Bar ===== -->
+<div class="lang-switch">
+    <a href="./ABOUT.md">🇬🇧 English (Default)</a>
+    <a href="./ABOUT-AR.html" class="inactive">🇾🇪 العربية</a>
+</div>
+
+<div class="repo-name">
+    <h3>Repository: jabri62018.github.io</h3>
+</div>
+
 <div class="header">
   <img src="Image/Jabri-photo.png" alt="Abdulla Al-Jabri">
   <h1>Eng. Abdulla Mohammed Nasser Al-Jabri</h1>
-  <h2>م. عبدالله محمد ناصر الجبري</h2>
   <h2>Independent Researcher in Mathematics & Theoretical Physics</h2>
-  <h2>باحث مستقل في الرياضيات والفيزياء النظرية</h2>
+  <h2>Identity: Z + C + A = 1</h2>
   <a href="https://github.com/Jabri-web" class="badge">Visit GitHub Profile</a>
 </div>
 
 <div class="container">
 
-<h3>Main Repositories / المستودعات الرئيسية</h3>
+<h3>About This Repository</h3>
+<p>This is the Main Portal and P1 Page for all Al-Jabri research projects. It serves as the central hub linking to all Zx function research, Riemann OS experiments, and Millennium Problems research.</p>
+
+<h3>Main Repositories</h3>
 <ul>
   <li><a href="https://jabri-web.github.io/jabri62018.github.io/">1. Jabri6218.github.io</a> <span class="desc">- Main Hub & P1 Page</span></li>
   <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.2/">2. Zx_RieOS_v1.2</a> <span class="desc">- v1.2 Improved Algorithms</span></li>
@@ -48,7 +64,6 @@ a:hover { text-decoration:underline; }
   <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.1/">7. Zx_RieOS_v1.1</a> <span class="desc">- v1.1 Numerical Validation</span></li>
   <li><a href="https://jabri-web.github.io/Jabri-RiemannOS/">8. Jabri_RiemannOS</a> <span class="desc">- Riemann Hypothesis Framework v1.3</span></li>
   <li><a href="https://jabri-web.github.io/Jabri_Checkout/">9. Jabri_Checkout</a> <span class="desc">- Testing Scripts</span></li>
-  <li><a href="https://jabri62018.github.io/">10. Jabri62018.github.io</a> <span class="desc">- This Page</span></li>
 </ul>
 
 <h3>Jabri_lab - Millennium Problems Extensions</h3>
@@ -78,13 +93,12 @@ a:hover { text-decoration:underline; }
 <p style="text-align:center; line-height:1.8">
   ORCID: <a href="https://orcid.org/0009-0003-3319-3822">0009-0003-3319-3822</a><br>
   Email: <a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a><br>
-  Website: <a href="https://jabri62018.github.io/">jabri62018.github.io</a><br>
-  Website: <a href="https://jabri-web.github.io/">jabri-web.github.io</a>
+  Website: <a href="https://jabri-com.vercel.app/">jabri-com.vercel.app</a>
 </p>
 
 <hr style="border:none; border-top:1px solid #30363d; margin:40px 0">
 
-<p class="center">CC BY 4.0 | Jabri Identity, Z + C + A = 1<br>From Sana'a to the Universe 🇾🇪</p>
+<p class="center">License: CC BY 4.0 | Jabri Identity, Z + C + A = 1<br>From Sana'a to the Universe 🇾🇪</p>
 
 </div>
 </body>
