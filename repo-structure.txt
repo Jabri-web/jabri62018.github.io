@@ -1,0 +1,112 @@
+
+           JABRI-WEB GITHUB ORGANIZATION MAP
+           Author: Eng. Abdulla Mohammed Nasser Al-Jabri
+           Identity: Z + C + A = 1
+           Verified: 2026-06-09
+
+
+📁 Jabri-web/ <-- Organization Root
+│
+├── 1. Jabri6218.github.io
+│ DOI: 10.5281/zenodo.20403864
+│ Pages: https://jabri-web.github.io/jabri62018.github.io/
+│ Desc: Main Portal Index - Central hub for all projects
+│
+├── 2. Zx-RieOS-v1.2
+│ DOI: 10.5281/zenodo.20100622 [x2]
+│ Pages: https://jabri-web.github.io/Zx_RieOS_v1.2/
+│ Desc: Experimental OS based on Zx Function & Riemann Zeros
+│
+├── 3. Zx-Mother-Function-Jabri
+│ DOI: -
+│ Pages: https://jabri-web.github.io/Zx_Mother_Function_Jabri/
+│ Desc: Core Zx Mother Function Implementation
+│
+├── 4. Jabri-web.github.io
+│ DOI: 10.5281/zenodo.20499365 / 10.5281/zenodo.20404167
+│ Pages: https://jabri-web.github.io/
+│ Desc: Secondary Main Portal
+│
+├── 5. Jabri-Nobble
+│ DOI: 10.5281/zenodo.20148770
+│ Pages: https://jabri-web.github.io/Jabri_Nobble/
+│ Desc: Millennium Problems Research Suite
+│ │
+│ ├── 5-1. Jabri-Riemann
+│ │ DOI: 10.5281/zenodo.20139904 / 10.5281/zenodo.20145337
+│ │ Desc: Riemann Hypothesis Module
+│ │
+│ ├── 5-2. Jabri-np
+│ │ DOI: 10.5281/zenodo.20145279
+│ │ Desc: P vs NP Module
+│ │
+│ ├── 5-3. Jabri-gab
+│ │ DOI: 10.5281/zenodo.20148344
+│ │ Desc: Hodge Conjecture Module
+│ │
+│ ├── 5-4. Jabri-Navier
+│ │ DOI: 10.5281/zenodo.20149618
+│ │ Desc: Navier-Stokes Module
+│ │
+│ ├── 5-5. Jabri-Birch
+│ │ DOI: -
+│ │ Desc: Birch and Swinnerton-Dyer Module
+│ │
+│ ├── 5-6. Jabri-Hodge
+│ │ DOI: -
+│ │ Desc: Hodge Conjecture Module
+│ │
+│ └── 5-7. Jabri-S-care [Jabri-Identity]
+│ DOI: 10.5281/zenodo.20114317
+│ Desc: Al-Jabri Identity Module Z+C+A=1
+│
+├── 6. Jabri-lab
+│ DOI: Publishing
+│ Pages: https://jabri-web.github.io/jabri_lab/
+│ Desc: Digital Laboratory for Experiments
+│ │
+│ ├── 6-1. Jabri-5
+│ ├── 6-2. Jabri-28
+│ ├── 6-3. Jabri-Gravity
+│ ├── 6-4. Jabri-Spacetime
+│ ├── 6-5. Jabri-DarkEnergy
+│ ├── 6-6. Jabri-Planck
+│ ├── 6-7. Jabri-Hubble
+│ ├── 6-8. Jabri-Periodic
+│ └── 6-9. Jabri-all
+│
+├── 7. Zx-RieOS-v1.1
+│ DOI: 10.5281/zenodo.19981688 / 10.5281/zenodo.20070594
+│ Pages: https://jabri-web.github.io/Zx_RieOS_v1.1/
+│ Desc: Previous version of RieOS
+│
+├── 8. Jabri-RiemannOS
+│ DOI: -
+│ Pages: https://jabri-web.github.io/Jabri-RiemannOS/
+│ Desc: Dedicated Riemann OS
+│
+├── 9. Jabri-Checkout
+│ DOI: 10.5281/zenodo.20513840
+│ Pages: https://jabri-web.github.io/Jabri_Checkout/
+│ Desc: Checkout and Validation System
+│
+├── 10. Jabri-web [ROUTER FOR GITHUB]
+│ DOI: -
+│ Pages: https://github.com/Jabri-web
+│ Desc: Main GitHub Organization Router - Gateway to all 1-9 repos
+│
+├── 11. jabri-com [ROUTER FOR AL-WAHA & VERCEL]
+│ DOI: -
+│ Pages: https://jabri-com.vercel.app
+│ Desc: Main Website Router - Al-Waha Platform with AR/EN versions
+│
+└── 12. jabri.com [ROUTER FOR 10++ 11]
+    DOI: -
+    Pages: https://jabri.com
+    Desc: Master Domain Router - Redirects to GitHub Org + Al-Waha
+
+REQUIREMENTS FOR EACH REPO:
+1. README.md + README-AR.md
+2. ABOUT.md + ABOUT-AR.md <-- with language switch bar
+3. Link to main website: https://jabri-com.vercel.app
+4. License: CC BY 4.0

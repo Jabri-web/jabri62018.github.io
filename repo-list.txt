@@ -1,0 +1,20 @@
+# المستودع GitHub Pages DOI
+1 Jabri6218.github.io jabri62018.github.io 20403864
+2 Zx-RieOS-v1.2 Zx_RieOS_v1.2 20100622
+3 Zx-Mother-Function-Jabri Zx_Mother_Function_Jabri -
+4 Jabri-web.github.io Jabri-web.github.io 20499365 / 20404167
+5 Jabri-Nobble Jabri_Nobble 20148770
+5.1 Jabri-Riemann - 20139904 / 20145337
+5.2 Jabri-np - 20145279
+5.3 Jabri-gab - 20148344
+5.4 Jabri-Navier - 20149618
+5.5 Jabri-Birch - -
+5.6 Jabri-Hodge - -
+5.7 Jabri-Identity - 20114317
+6 Jabri-lab jabri_lab قيد النشر
+7 Zx-RieOS-v1.1 Zx_RieOS_v1.1 19981688 / 20070594
+8 Jabri-RiemannOS Jabri-RiemannOS -
+9 Jabri-Checkout Jabri_Checkout 20513840
+10 Jabri-web (منظمة GitHub) -
+11 jabri-com (موقع Vercel) -
+12 jabri.com (النطاق الرئيسي) -
