@@ -10,6 +10,22 @@
 
 ---
 
+# 📌 Repository Identity Card
+
+| Field | Details |
+| :--- | :--- |
+| **Repository Name** | `jabri62018.github.io` |
+| **GitHub Repo** | [https://github.com/Jabri-web/jabri62018.github.io](https://github.com/Jabri-web/jabri62018.github.io) |
+| **GitHub Pages** | [https://jabri-web.github.io/jabri62018.github.io/](https://jabri-web.github.io/jabri62018.github.io/) |
+| **Current File** | `./ABOUT.md` (English) |
+| **Language** | English (Default) / العربية (Alternative) |
+| **DOI** | [10.5281/zenodo.20403864](https://doi.org/10.5281/zenodo.20403864) |
+| **Author** | [Eng. Abdulla Mohammed Nasser Al-Jabri](https://github.com/Jabri-web) |
+| **License** | CC BY 4.0 |
+| **Identity** | `Z + C + A = 1` |
+
+---
+
 # 📌 Repository: jabri62018.github.io
 
 **The Main Portal (P1) – Central Index for the Jabri-web Ecosystem**
@@ -53,9 +69,10 @@ This repository is organized to maximize accessibility and clarity. Below is the
 ## 🔗 Quick Links
 
 - **Live Page:** [https://jabri-web.github.io/jabri62018.github.io/](https://jabri-web.github.io/jabri62018.github.io/)
+- **GitHub Repo:** [https://github.com/Jabri-web/jabri62018.github.io](https://github.com/Jabri-web/jabri62018.github.io)
 - **DOI:** [10.5281/zenodo.20403864](https://doi.org/10.5281/zenodo.20403864)
 - **Main Website:** [https://jabri-com.vercel.app](https://jabri-com.vercel.app)
-- **Author:** [Eng. Abdulla Mohammed Nasser Al-Jabri](https://github.com/Jabri-web)
+- **Author Profile:** [https://github.com/Jabri-web](https://github.com/Jabri-web)
 
 ---
 
