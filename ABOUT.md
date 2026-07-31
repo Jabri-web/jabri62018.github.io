@@ -3,24 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abdulla Al-Jabri - Projects</title>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+<title>Abdulla Al-Jabri</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 <style>
-body {background:#0a0a0f; color:#e8e8f0; font-family:"Tajawal", sans-serif; margin:0; padding:0; line-height:1.8}
-.header {text-align:center; padding:40px 20px; background:#0a0a0a; border-bottom:1px solid #1f1f2e}
-.header img {width:140px; height:140px; border-radius:50%; border:4px solid #6ae3ff; object-fit:cover; margin-bottom:15px}
-.container {max-width:800px; margin:0 auto; padding:30px 20px}
-h1 {color:#6ae3ff; font-size:1.6rem; margin:10px 0}
-h2 {color:#e8e8f0; font-size:1.1rem; font-weight:500; margin:5px 0}
-h3 {color:#6ae3ff; font-size:1.2rem; margin-top:40px; border-bottom:1px solid #1f1f2e; padding-bottom:10px}
-.repo {background:#161b22; padding:18px; border-radius:10px; margin:15px 0; border:1px solid #30363d; transition:0.3s}
-.repo:hover {border-color:#6ae3ff; box-shadow:0 0 15px rgba(106,227,255,0.2)}
-.repo-title {font-weight:700; font-size:17px; color:#6ae3ff; margin-bottom:8px}
-.repo-links {margin-top:10px}
-.btn {display:inline-block; padding:6px 14px; background:#6ae3ff; color:#0a0a0f; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; margin-left:8px}
-.btn:hover {background:#4dd4ff; text-decoration:none}
-.doi {color:#8a8a9e; font-size:13px}
-.center {text-align:center; margin-top:50px; color:#666; font-size:14px}
+body { background:#0a0a0f; color:#e8e8f0; font-family: "Tajawal", sans-serif; padding: 0; margin: 0; line-height: 1.8; }
+.header { text-align:center; padding: 40px 20px; background: #0a0a0a; margin-bottom:40px; border-bottom: 1px solid #1f1f2e; }
+.header img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #6ae3ff; object-fit: cover; margin-bottom: 15px; }
+.container { max-width: 700px; margin: 0 auto; padding: 0 20px 30px 20px; }
+h1,h2,h3 { color:#6ae3ff; margin:10px 0; }
+h1 { font-size:1.6rem; }
+h2 { font-size:1.1rem; font-weight:500; color:#e8e8f0; }
+h3 { font-size:1.2rem; margin-top:40px; border-bottom:1px solid #1f1f2e; padding-bottom:10px; }
+ul { list-style:none; padding:0; }
+li { margin:12px 0; }
+a { color:#6ae3ff; text-decoration:none; }
+a:hover { text-decoration:underline; }
+.desc { color:#8a8a9e; font-size:0.9rem; margin-right:10px; }
+.badge { display:inline-block; background:#6ae3ff; color:#0a0a0f; padding:8px 20px; border-radius:6px; font-weight:600; margin-top:15px; text-decoration:none; }
+.badge:hover { background:#4dd4ff; text-decoration:none; }
+.center { text-align:center; margin-top:50px; color:#666; }
 </style>
 </head>
 <body>
@@ -28,155 +29,62 @@ h3 {color:#6ae3ff; font-size:1.2rem; margin-top:40px; border-bottom:1px solid #1
 <div class="header">
   <img src="Image/Jabri-photo.png" alt="Abdulla Al-Jabri">
   <h1>Eng. Abdulla Mohammed Nasser Al-Jabri</h1>
-  <h2>باحث مستقل في الرياضيات والفيزياء النظرية</h2>
+  <h2>م. عبدالله محمد ناصر الجبري</h2>
   <h2>Independent Researcher in Mathematics & Theoretical Physics</h2>
+  <h2>باحث مستقل في الرياضيات والفيزياء النظرية</h2>
+  <a href="https://github.com/Jabri-web" class="badge">Visit GitHub Profile</a>
 </div>
 
 <div class="container">
-<h3>Main Repositories - المستودعات الرئيسية 10</h3>
 
-<div class="repo">
-<div class="repo-title">1. Jabri6218.github.io</div>
-<div class="doi">DOI: 10.5281/zenodo.20403864</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/jabri62018.github.io/" class="btn">دخول Pages</a>
-<a href="https://doi.org/10.5281/zenodo.20403864" class="btn">DOI</a>
-</div>
-</div>
+<h3>Main Repositories / المستودعات الرئيسية</h3>
+<ul>
+  <li><a href="https://jabri-web.github.io/jabri62018.github.io/">1. Jabri6218.github.io</a> <span class="desc">- Main Hub & P1 Page</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.2/">2. Zx_RieOS_v1.2</a> <span class="desc">- v1.2 Improved Algorithms</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/">3. Zx_Mother_Function_Jabri</a> <span class="desc">- Core Theory & Zx Function</span></li>
+  <li><a href="https://jabri-web.github.io/">4. Jabri-web.github.io</a> <span class="desc">- Organization Hub</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri_Nobble/">5. Jabri_Nobble</a> <span class="desc">- Zx_RiemannOS Archive</span></li>
+  <li><a href="https://jabri-web.github.io/jabri_lab/">6. jabri_lab</a> <span class="desc">- Zx Function & Millennium Problems</span></li>
+  <li><a href="https://jabri-web.github.io/Zx_RieOS_v1.1/">7. Zx_RieOS_v1.1</a> <span class="desc">- v1.1 Numerical Validation</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri-RiemannOS/">8. Jabri_RiemannOS</a> <span class="desc">- Riemann Hypothesis Framework v1.3</span></li>
+  <li><a href="https://jabri-web.github.io/Jabri_Checkout/">9. Jabri_Checkout</a> <span class="desc">- Testing Scripts</span></li>
+  <li><a href="https://jabri62018.github.io/">10. Jabri62018.github.io</a> <span class="desc">- This Page</span></li>
+</ul>
 
-<div class="repo">
-<div class="repo-title">2. Zx_RieOS_v1.2</div>
-<div class="doi">DOI: 10.5281/zenodo.20100622</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Zx_RieOS_v1.2/" class="btn">دخول Pages</a>
-<a href="https://doi.org/10.5281/zenodo.20100622" class="btn">DOI</a>
-</div>
-</div>
+<h3>Jabri_lab - Millennium Problems Extensions</h3>
+<ul>
+  <li><a href="https://doi.org/10.5281/zenodo.20139904">6-1. Jabri_Riemann</a> <span class="desc">- Riemann Hypothesis</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20145279">6-2. Jabri_np</a> <span class="desc">- P vs NP</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20148344">6-3. Jabri_gap</a> <span class="desc">- Yang-Mills Mass Gap</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20114317">6-4. Jabri_Identity</a> <span class="desc">- Jabri Identity Z+C+A=1</span></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20149618">6-5. Jabri_Navier</a> <span class="desc">- Navier-Stokes</span></li>
+  <li><a href="#">6-6. Jabri_Birch</a> <span class="desc">- Birch & Swinnerton-Dyer</span></li>
+  <li><a href="#">6-7. Jabri_Hodge</a> <span class="desc">- Hodge Conjecture</span></li>
+</ul>
 
-<div class="repo">
-<div class="repo-title">3. Zx_Mother_Function_Jabri</div>
-<div class="doi">DOI: قيد النشر</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/" class="btn">دخول Pages</a>
-</div>
-</div>
+<h3 style="color:#6ae3ff; text-align:center; margin-top:40px">Published Papers with DOI</h3>
+<ul style="list-style:none; padding:0; text-align:center">
+  <li><a href="https://doi.org/10.5281/zenodo.20139904">Riemann Hypothesis</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20145279">P vs NP</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20148344">Yang-Mills Mass Gap</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20149618">Navier Stokes</a></li>
+  <li><a href="https://doi.org/10.5281/zenodo.20114317">Jabri Identity</a></li>
+  <li><a href="https://github.com/jabri62018/Jabri_RiemannOS">Zx_RiemannOS v1.3</a></li>
+  <li><a href="https://github.com/jabri62018/Zx_RieOS_v1.2">Zx_RieOS v1.2 Gold</a></li>
+  <li><a href="https://github.com/jabri62018/Zx_RieOS_v1.1">Zx_RieOS v1.1</a></li>
+</ul>
 
-<div class="repo">
-<div class="repo-title">4. Jabri-web.github.io</div>
-<div class="doi">DOI: 10.5281/zenodo.20499365 / 20404167</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/" class="btn">دخول Pages</a>
-<a href="https://doi.org/10.5281/zenodo.20499365" class="btn">DOI 1</a>
-<a href="https://doi.org/10.5281/zenodo.20404167" class="btn">DOI 2</a>
-</div>
-</div>
+<h3 style="color:#6ae3ff; text-align:center; margin-top:40px">Contact</h3>
+<p style="text-align:center; line-height:1.8">
+  ORCID: <a href="https://orcid.org/0009-0003-3319-3822">0009-0003-3319-3822</a><br>
+  Email: <a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a><br>
+  Website: <a href="https://jabri62018.github.io/">jabri62018.github.io</a><br>
+  Website: <a href="https://jabri-web.github.io/">jabri-web.github.io</a>
+</p>
 
-<div class="repo">
-<div class="repo-title">5. Jabri_Nobble</div>
-<div class="doi">DOI: 10.5281/zenodo.20148770</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Jabri_Nobble/" class="btn">دخول Pages</a>
-<a href="https://doi.org/10.5281/zenodo.20148770" class="btn">DOI</a>
-</div>
-</div>
+<hr style="border:none; border-top:1px solid #30363d; margin:40px 0">
 
-<div class="repo" style="margin-right:30px">
-<div class="repo-title">5.1 └─ Jabri_Riemann</div>
-<div class="doi">DOI: 10.5281/zenodo.20139904 / 20145337</div>
-<div class="repo-links">
-<a href="https://doi.org/10.5281/zenodo.20139904" class="btn">DOI 1</a>
-<a href="https://doi.org/10.5281/zenodo.20145337" class="btn">DOI 2</a>
-</div>
-</div>
-
-<div class="repo" style="margin-right:30px">
-<div class="repo-title">5.2 └─ Jabri_np</div>
-<div class="doi">DOI: 10.5281/zenodo.20145279</div>
-<div class="repo-links">
-<a href="https://doi.org/10.5281/zenodo.20145279" class="btn">DOI</a>
-</div>
-</div>
-
-<div class="repo" style="margin-right:30px">
-<div class="repo-title">5.3 └─ Jabri_gap</div>
-<div class="doi">DOI: 10.5281/zenodo.20148344</div>
-<div class="repo-links">
-<a href="https://doi.org/10.5281/zenodo.20148344" class="btn">DOI</a>
-</div>
-</div>
-
-<div class="repo" style="margin-right:30px">
-<div class="repo-title">5.4 └─ Jabri_Identity</div>
-<div class="doi">DOI: 10.5281/zenodo.20114317</div>
-<div class="repo-links">
-<a href="https://doi.org/10.5281/zenodo.20114317" class="btn">DOI</a>
-</div>
-</div>
-
-<div class="repo" style="margin-right:30px">
-<div class="repo-title">5.5 └─ Jabri_Navier</div>
-<div class="doi">DOI: 10.5281/zenodo.20149618</div>
-<div class="repo-links">
-<a href="https://doi.org/10.5281/zenodo.20149618" class="btn">DOI</a>
-</div>
-</div>
-
-<div class="repo">
-<div class="repo-title">6. Jabri_lab</div>
-<div class="doi">DOI: قيد النشر</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/jabri_lab/" class="btn">دخول Pages</a>
-</div>
-</div>
-
-<div class="repo">
-<div class="repo-title">7. Zx_RieOS_v1.1</div>
-<div class="doi">DOI: 10.5281/zenodo.19981688 / 20070594</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Zx_RieOS_v1.1/" class="btn">دخول Pages</a>
-<a href="https://doi.org/10.5281/zenodo.19981688" class="btn">DOI 1</a>
-<a href="https://doi.org/10.5281/zenodo.20070594" class="btn">DOI 2</a>
-</div>
-</div>
-
-<div class="repo">
-<div class="repo-title">8. Jabri_RiemannOS</div>
-<div class="doi">DOI: -</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Jabri-RiemannOS/" class="btn">دخول Pages</a>
-</div>
-</div>
-
-<div class="repo">
-<div class="repo-title">9. Jabri_Checkout</div>
-<div class="doi">DOI: 10.5281/zenodo.20513840</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Jabri_Checkout/" class="btn">دخول Pages</a>
-<a href="https://doi.org/10.5281/zenodo.20513840" class="btn">DOI</a>
-</div>
-</div>
-
-<div class="repo">
-<div class="repo-title">10. Jabri-web</div>
-<div class="doi">DOI: 10.5281/zenodo.20499365</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Jabri-web/" class="btn">دخول Pages</a>
-<a href="https://doi.org/10.5281/zenodo.20499365" class="btn">DOI</a>
-</div>
-</div>
-<div class="repo">
-<div class="repo-title">11. Jabri-com</div>
-<div class="doi">DOI: 10.5281/zenodo.21003990</div>
-<div class="repo-links">
-<a href="https://jabri-web.github.io/Jabri-com/" class="btn">دخول Site</a>
-<a href="https://doi.org/10.5281/zenodo.21003990" class="btn">DOI</a>
-</div>
-</div>
-
-<div class="center">
-<p><b>Verified 2026-06-11 by Jabri</b>: كل الروابط 1-10 شغالة. DOI كله 10.5281. لا تعديل بعد اليوم.</p>
-<p>CC BY 4.0 | Jabri Identity: Z + C + A = 1</p>
-</div>
+<p class="center">CC BY 4.0 | Jabri Identity, Z + C + A = 1<br>From Sana'a to the Universe 🇾🇪</p>
 
 </div>
 </body>
