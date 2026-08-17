@@ -19,7 +19,7 @@
     <link rel="alternate" hreflang="ar" href="https://jabri-com.vercel.app/ar/" />
     <link rel="alternate" hreflang="en" href="https://jabri-com.vercel.app/en/" />
     <link rel="alternate" hreflang="x-default" href="https://jabri-com.vercel.app/" />
-    <link rel="canonical" href="https://jabri-com.vercel.app/" />
+    <link rel="canonical" href="https://jabri-com.vercel.app/Page11.html" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
 
     <!-- ============================================ -->
@@ -63,7 +63,7 @@
     <meta property="og:image" content="https://jabri-com.vercel.app/image/Jabri-photo.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://jabri-com.vercel.app/" />
+    <meta property="og:url" content="https://jabri-com.vercel.app/Page11.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="واحة الجبري | Heaven Al-Jabri" />
     <meta name="twitter:description" content="تراث اليمن العريق وأبحاث الرياضيات والفيزياء" />
@@ -147,8 +147,8 @@
         },
         {
           "@type": "WebPage",
-          "@id": "https://jabri-com.vercel.app/#webpage",
-          "url": "https://jabri-com.vercel.app/",
+          "@id": "https://jabri-com.vercel.app/Page11.html#webpage",
+          "url": "https://jabri-com.vercel.app/Page11.html",
           "name": "واحة الجبري | Heaven Al-Jabri",
           "description": "منصة توثيق التراث اليمني وبوابة السندباد للأبحاث العلمية",
           "isPartOf": { "@id": "https://jabri-com.vercel.app/#website" },
@@ -172,7 +172,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "واحة الجبري",
-              "item": "https://jabri-com.vercel.app/"
+              "item": "https://jabri-com.vercel.app/Page11.html"
             }
           ]
         }
@@ -870,7 +870,6 @@
                 font-size: 14px;
                 min-width: 110px;
             }
-            /* تجاوب الأركان */
             .oasis-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 12px;
@@ -941,6 +940,7 @@
             }
         }
     </style>
+
 </head>
 <body>
 
@@ -995,7 +995,7 @@
                 <span class="label-ar">معلم تاريخي</span>
             </div>
             <div class="corner">
-                <img src="/image/Jabri-photo.webp" alt="المؤسس عبدالله الجبري" loading="lazy" />
+                <img src="/image/Jabri-photo2.webp" alt="المؤسس عبدالله الجبري" loading="lazy" />
                 <span>👨‍💻 المصمم - المؤسس</span>
                 <span class="label-ar">م/ عبدالله الجبري</span>
             </div>
@@ -1227,29 +1227,10 @@
     </div>
 
     <!-- ============================================ -->
-    <!--  تشغيل السكريبتات المركزية (مرة واحدة)       -->
+    <!--         السكريبتات المركزية                   -->
     <!-- ============================================ -->
-    <script src="/js/init-page-root.js"></script>
+    <script src="../js/init-page-root.js"></script>
+    <script src="../js/menu.js"></script>
 
-
-<script src="/js/menu.js"></script>
-
-
-<script>
-    // محاولة تحميل menu.js، وإذا فشل، استخدم الكود المضمن
-    fetch('/js/menu.js')
-        .then(response => {
-            if (!response.ok) throw new Error('File not found');
-            return response.text();
-        })
-        .then(code => {
-            eval(code);
-        })
-        .catch(() => {
-            // الكود الاحتياطي (نسخة مصغرة من menu.js)
-            console.log('تم تحميل القائمة من النسخة الاحتياطية');
-            // يمكنك وضع الكود الكامل هنا كـ fallback
-        });
-</script>
 </body>
 </html>

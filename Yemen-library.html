@@ -1,155 +1,738 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jabri-web - مكتبة اليمن | Yemen Library</title>
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-<style>
-body{font-family:'Tajawal',sans-serif;background:#0d1117;color:#c9d1d9;margin:0;padding:40px 20px}
-.container{max-width:1100px;margin:auto;background:#161b22;border-radius:12px;border:1px solid #30363d;padding:35px}
-.profile-header{text-align:center;margin-bottom:40px;padding-bottom:30px;border-bottom:2px solid #30363d}
-.profile-img{width:140px;height:140px;border-radius:50%;border:4px solid #6ae3ff;object-fit:cover;margin-bottom:20px;box-shadow:0 0 30px rgba(106,227,255,0.3)}
-.profile-name{color:#6ae3ff;font-size:1.8rem;font-weight:700;margin:10px 0}
-.profile-name-ar{color:#f0f6fc;font-size:1.4rem;font-weight:600;margin:8px 0}
-.profile-title{color:#8d96a0;font-size:1.05rem;margin:5px 0}
-.section-title{color:#58a6ff;text-align:center;margin:35px 0 20px;font-size:1.3rem;border-bottom:2px solid #30363d;padding-bottom:10px}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* شبكة 5 أعمدة */
-.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px}
-.card{background:#21262d;border:1px solid #30363d;border-radius:10px;padding:20px;text-decoration:none;color:#c9d1d9;text-align:center;transition:0.25s;min-height:140px;display:flex;flex-direction:column;justify-content:center}
-.card:hover{background:#30363d;border-color:#58a6ff;transform:translateY(-4px)}
-.badge{display:inline-block;color:#fff;font-weight:700;padding:4px 10px;border-radius:6px;margin-bottom:8px;font-size:0.85rem}
-.badge.p1{background:#1f6feb}.badge.p2{background:#238636}.badge.p3{background:#a371f7}
-.badge.p4{background:#f9826c}.badge.p5{background:#00ffc8;color:#0d1117}.badge.p6{background:#8957e5}
-.badge.p7{background:#e36209}.badge.p8{background:#2ea043}.badge.p9{background:#db61a2}
-.badge.p10{background:#8b949e}
+    <!-- ============================================ -->
+    <!--              HEADER (SEO + Meta)             -->
+    <!-- ============================================ -->
 
-.en-title{font-weight:700;color:#58a6ff;display:block;font-size:1rem}
-.ar-title{color:#f0f6fc;display:block;font-size:0.95rem;margin-top:4px}
-.repo-desc{color:#8d96a0;font-size:0.8rem;margin-top:6px;line-height:1.4}
+    <!-- ===== 丨賲丕賷丞 丕賱賲丨鬲賵賶 + 丕賱賰丕賳賵賳賷賰丕賱 丕賱孬丕亘鬲 ===== -->
+    <link rel="alternate" hreflang="ar" href="" />
+    <link rel="alternate" hreflang="en" href="" />
+    <link rel="canonical" href="" />
+    <meta name="google-site-verification" content="SN_zKidXbtB2FBxIPwlPgV-L24kJR2eHE9SQRIE76U" />
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const base = 'https://jabri-web.github.io';
+        const path = window.location.pathname;
+        const canonical = document.querySelector('link[rel="canonical"]');
+        const arAlt = document.querySelector('link[hreflang="ar"]');
+        const enAlt = document.querySelector('link[hreflang="en"]');
+        if (canonical) canonical.href = base + path;
+        if (arAlt) arAlt.href = base + path;
+        if (enAlt) enAlt.href = base + '/en' + path;
+    });
+    </script>
 
-.paper-list{list-style:none;padding:0}
-.paper-list li{background:#21262d;border:1px solid #30363d;border-radius:8px;padding:12px;margin-bottom:10px;text-align:center}
-.paper-doi{color:#58a6ff;text-decoration:none;font-size:0.9rem}
+    <!-- SEO 兀爻丕爻賷 (賲禺氐氐 賱賱氐賮丨丞) -->
+    <title>賲賰鬲亘丞 丕賱賷賲賳 | Yemen Library - 賵丕丨丞 丕賱噩亘乇賷 賱賱鬲乇丕孬 賵丕賱兀亘丨丕孬 1鈫�12</title>
+    <meta name="description" content="賲賰鬲亘丞 丕賱賷賲賳: 賲賳氐丞 鬲賵孬賷賯 丕賱鬲乇丕孬 丕賱賷賲賳賷 賵丕賱兀亘丨丕孬 丕賱毓賱賲賷丞 賮賷 丕賱乇賷丕囟賷丕鬲 賵丕賱賮賷夭賷丕亍 丕賱賳馗乇賷丞 囟賲賳 賵丕丨丞 丕賱噩亘乇賷. 賯賵丕毓丿 亘賷丕賳丕鬲 1鈫�12貙 兀亘丨丕孬 賲爻噩賱丞 DOI.">
+    <meta name="keywords" content="賲賰鬲亘丞 丕賱賷賲賳, Yemen Library, 賵丕丨丞 丕賱噩亘乇賷, 鬲乇丕孬 丕賱賷賲賳, 兀亘丨丕孬 DOI, 乇賷丕囟賷丕鬲, 賮賷夭賷丕亍, 爻賳丿亘丕丿 丕賱賷賲賳, jabri.com">
+    <meta name="author" content="賲/ 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷 | Eng. Abdulla Mohammed Nasser Al-Jabri">
+    <meta name="rights" content="漏 2026 Eng. Abdulla Al-Jabri. All rights reserved.">
+    <link rel="icon" href="/image/favicon.ico" type="image/x-icon" />
 
-.contact-list{list-style:none;padding:0;text-align:center}
-.contact-list li{margin:8px 0;color:#8d96a0}
-.contact-list a{color:#58a6ff;text-decoration:none;font-weight:600}
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="賲賰鬲亘丞 丕賱賷賲賳 | Yemen Library - 賵丕丨丞 丕賱噩亘乇賷" />
+    <meta name="DC.creator" content="賲/ 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷" />
+    <meta name="DC.subject" content="鬲乇丕孬 丕賱賷賲賳, 丕賱乇賷丕囟賷丕鬲, 丕賱賮賷夭賷丕亍 丕賱賳馗乇賷丞" />
 
-.footer-text{text-align:center;margin-top:35px;color:#8d96a0;font-size:0.9rem;font-style:italic}
+    <!-- Open Graph + Twitter -->
+    <meta property="og:locale" content="ar_YE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="賵丕丨丞 丕賱噩亘乇賷 | Heaven Al-Jabri">
+    <meta property="og:title" content="賲賰鬲亘丞 丕賱賷賲賳 | Yemen Library - 賵丕丨丞 丕賱噩亘乇賷 1鈫�12">
+    <meta property="og:description" content="賲賳氐丞 鬲賵孬賷賯 丕賱鬲乇丕孬 丕賱賷賲賳賷 賵丕賱兀亘丨丕孬 丕賱毓賱賲賷丞 賮賷 丕賱乇賷丕囟賷丕鬲 賵丕賱賮賷夭賷丕亍 丕賱賳馗乇賷丞.">
+    <meta property="og:image" content="https://jabri-web.github.io/image/Jabri-photo.png">
+    <meta property="og:url" content="https://jabri-web.github.io/Yemen-library.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="賲賰鬲亘丞 丕賱賷賲賳 | Yemen Library - 賵丕丨丞 丕賱噩亘乇賷">
+    <meta name="twitter:description" content="鬲乇丕孬 丕賱賷賲賳 賵丕賱兀亘丨丕孬 丕賱毓賱賲賷丞 - 賵丕丨丞 丕賱噩亘乇賷">
+    <meta name="twitter:image" content="https://jabri-web.github.io/image/Jabri-photo.png">
 
-@media(max-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:600px){body{padding:20px 12px}.container{padding:25px 18px}.grid{grid-template-columns:repeat(2,1fr)}}
-</style>
+    <!-- JSON-LD (丕賱亘賷丕賳丕鬲 丕賱賲賳馗賲丞) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://jabri-web.github.io/#person",
+          "name": "賲/ 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷",
+          "alternateName": ["Eng. Abdulla Mohammed Nasser Al-Jabri", "Abdulla Al-Jabri"],
+          "identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "ORCID",
+            "value": "0009-0003-3319-3822",
+            "url": "https://orcid.org/0009-0003-3319-3822"
+          },
+          "url": "https://jabri-web.github.io/",
+          "image": "https://jabri-web.github.io/image/Jabri-photo.png",
+          "jobTitle": "Researcher, Author & Founder",
+          "nationality": "Yemeni",
+          "email": "mailto:jabri62018@gmail.com",
+          "sameAs": [
+            "https://orcid.org/0009-0003-3319-3822",
+            "https://github.com/jabri-web",
+            "https://en.wikipedia.org/wiki/User:Jabri2026",
+            "https://jabri-web.github.io/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jabri-web.github.io/#website",
+          "url": "https://jabri-web.github.io/",
+          "name": "賵丕丨丞 丕賱噩亘乇賷 | Heaven Al-Jabri",
+          "description": "賲賳氐丞 鬲賵孬賷賯 丕賱鬲乇丕孬 丕賱賷賲賳賷 賵亘賵丕亘丞 丕賱爻賳丿亘丕丿 賱賱兀亘丨丕孬 丕賱毓賱賲賷丞",
+          "inLanguage": ["ar", "en"]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://jabri-web.github.io/Yemen-library.html",
+          "url": "https://jabri-web.github.io/Yemen-library.html",
+          "name": "賲賰鬲亘丞 丕賱賷賲賳 | Yemen Library - 賵丕丨丞 丕賱噩亘乇賷",
+          "description": "賲賳氐丞 鬲賵孬賷賯 丕賱鬲乇丕孬 丕賱賷賲賳賷 賵丕賱兀亘丨丕孬 丕賱毓賱賲賷丞 1鈫�12"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ============================================ -->
+    <!--              丕賱兀賳賲丕胤 (CSS)                   -->
+    <!-- ============================================ -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* ---------- 丕賱兀賳賲丕胤 丕賱毓丕賲丞 ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0f;
+            color: #e0e0e0;
+            font-family: 'Cairo', Tahoma, Arial, sans-serif;
+            text-align: center;
+            transition: 0.3s;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body.en {
+            direction: ltr;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* 夭乇 鬲亘丿賷賱 丕賱賱睾丞 (孬丕亘鬲) */
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            z-index: 9999;
+            display: flex;
+            gap: 4px;
+            background: #1a1a2e;
+            padding: 6px 12px;
+            border-radius: 30px;
+            border: 1px solid #2a2a4e;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        body.ar .lang-switch { left: 20px; }
+        body.en .lang-switch { right: 20px; }
+
+        .lang-switch button {
+            background: none;
+            border: none;
+            color: #8888bb;
+            padding: 6px 14px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .lang-switch button:hover {
+            color: #d0d0ea;
+            background: #2a2a4e;
+        }
+
+        .lang-switch button.active {
+            background: #6ae3ff;
+            color: #0b0b16;
+        }
+
+        .lang-switch button.active:hover {
+            background: #5ad0f0;
+        }
+
+        /* ---------- 兀賳賲丕胤 丕賱賮賵鬲乇 (site-footer) ---------- */
+        #site-footer {
+            background: #0a0a0f;
+            color: #e8e8f0;
+            padding: 30px 15px;
+            border-top: 1px solid #2a2a3e;
+            font-family: 'Tajawal', Arial, sans-serif;
+            margin-top: 40px;
+        }
+
+        #site-footer a {
+            color: #6ae3ff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin: 0 8px;
+        }
+
+        #site-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 15px 0;
+        }
+
+        .footer-search {
+            text-align: center;
+            margin: 20px 0;
+            border-top: 1px solid #2a2a3e;
+            padding-top: 20px;
+        }
+
+        .footer-search a {
+            margin: 0 10px;
+        }
+
+        #copyright {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* ---------- 兀賳賲丕胤 丕賱氐賮丨丞 丕賱禺丕氐丞 (Yemen-library) ---------- */
+        .library-container {
+            flex: 1;
+            max-width: 1100px;
+            margin: 60px auto 0;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .library-inner {
+            background: #161b22;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            padding: 35px;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #30363d;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #6ae3ff;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(106, 227, 255, 0.3);
+        }
+
+        .profile-name {
+            color: #6ae3ff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .profile-name-ar {
+            color: #f0f6fc;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 8px 0;
+        }
+
+        .profile-title {
+            color: #8d96a0;
+            font-size: 1.05rem;
+            margin: 5px 0;
+        }
+
+        .section-title {
+            color: #58a6ff;
+            text-align: center;
+            margin: 35px 0 20px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #30363d;
+            padding-bottom: 10px;
+        }
+        .section-title i {
+            margin-left: 10px;
+            color: #f7d44a;
+        }
+
+        /* 卮亘賰丞 賯賵丕毓丿 丕賱亘賷丕賳丕鬲 12 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: #c9d1d9;
+            text-align: center;
+            transition: 0.25s;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card:hover {
+            background: #30363d;
+            border-color: #58a6ff;
+            transform: translateY(-4px);
+        }
+
+        .badge {
+            display: inline-block;
+            color: #fff;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+        .badge.p1 { background: #1f6feb; }
+        .badge.p2 { background: #238636; }
+        .badge.p3 { background: #a371f7; }
+        .badge.p4 { background: #f9826c; }
+        .badge.p5 { background: #00ffc8; color: #0d1117; }
+        .badge.p6 { background: #8957e5; }
+        .badge.p7 { background: #e36209; }
+        .badge.p8 { background: #2ea043; }
+        .badge.p9 { background: #db61a2; }
+        .badge.p10 { background: #8b949e; }
+        .badge.p11 { background: #f0883e; }
+        .badge.p12 { background: #ff3333; }
+
+        .en-title {
+            font-weight: 700;
+            color: #58a6ff;
+            display: block;
+            font-size: 1rem;
+        }
+        .ar-title {
+            color: #f0f6fc;
+            display: block;
+            font-size: 0.95rem;
+            margin-top: 4px;
+        }
+        .repo-desc {
+            color: #8d96a0;
+            font-size: 0.75rem;
+            margin-top: 6px;
+            line-height: 1.4;
+        }
+
+        .card-highlight {
+            border-color: #ff3333;
+            background: #1a0a0a;
+        }
+        .card-highlight:hover {
+            border-color: #ff6666;
+            background: #2a0a0a;
+        }
+
+        /* 賯丕卅賲丞 丕賱兀亘丨丕孬 */
+        .paper-list {
+            list-style: none;
+            padding: 0;
+        }
+        .paper-list li {
+            background: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .paper-doi {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .paper-doi:hover {
+            text-decoration: underline;
+        }
+
+        /* 賯丕卅賲丞 丕賱鬲賵丕氐賱 */
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .contact-list li {
+            margin: 8px 0;
+            color: #8d96a0;
+        }
+        .contact-list a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 35px;
+            color: #8d96a0;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .ar-text, .en-text {
+            display: inline;
+        }
+        body.en .ar-text { display: none; }
+        body:not(.en) .en-text { display: none; }
+
+        /* 丕爻鬲噩丕亘丞 */
+        @media (max-width: 900px) {
+            .grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .lang-switch { top: 10px; padding: 4px 8px; }
+            body.ar .lang-switch { left: 10px; }
+            body.en .lang-switch { right: 10px; }
+            .lang-switch button { padding: 4px 10px; font-size: 0.75rem; }
+            .library-container { margin-top: 50px; }
+            .library-inner { padding: 25px 18px; }
+            .grid { grid-template-columns: repeat(2, 1fr); }
+            .profile-img { width: 100px; height: 100px; }
+            .profile-name { font-size: 1.3rem; }
+        }
+        @media (max-width: 400px) {
+            .grid { grid-template-columns: 1fr 1fr; }
+            .card { min-height: 110px; padding: 14px; }
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+    <!-- ============================================ -->
+    <!--          夭乇 鬲亘丿賷賱 丕賱賱睾丞 (孬丕亘鬲)               -->
+    <!-- ============================================ -->
 
-  <div class="profile-header">
-    <img src="Image/Jabri_photo.png" alt="Eng. Abdulla Al-Jabri" class="profile-img">
-    <h1 class="profile-name">Eng. Abdulla Mohammed Nasser Al-Jabri</h1>
-    <h2 class="profile-name-ar">م. عبدالله محمد ناصر الجبري</h2>
-    <p class="profile-title">Independent Researcher in Mathematics & Theoretical Physics</p>
-    <p class="profile-title">باحث مستقل في الرياضيات والفيزياء النظرية</p>
-    <p class="profile-title" style="color:#6ae3ff;font-weight:600">مجال البحث: تراث اليمن + دالة Zx</p>
-  </div>
+    <div class="lang-switch">
+        <button id="lang-ar" class="active" onclick="window.toggleLang()">馃嚫馃嚘 毓乇亘賷</button>
+        <button id="lang-en" onclick="window.toggleLang()">馃嚞馃嚙 English</button>
+    </div>
 
-  <h2 class="section-title">🗄️ قواعد بيانات اليمن | Yemen Databases 1 → 10</h2>
-  <div class="grid">
-    
-    <a href="https://jabri-web.github.io/jabri62018.github.io/" class="card" target="_blank">
-      <span class="badge p1">P1</span>
-      <span class="en-title">Yemen Sindbad</span>
-      <span class="ar-title">سندباد اليمن</span>
-      <div class="repo-desc">التراث والحكايات الشعبية</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/Zx_RieOS_v1.2/" class="card" target="_blank">
-      <span class="badge p2">P2</span>
-      <span class="en-title">Yemen Bird</span>
-      <span class="ar-title">طائر اليمن</span>
-      <div class="repo-desc">خوارزميات محسنة v1.2</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/Zx_Mother_Function_Jabri/" class="card" target="_blank">
-      <span class="badge p3">P3</span>
-      <span class="en-title">Yemen Ankboot</span>
-      <span class="ar-title">العنكبوت اليمني</span>
-      <div class="repo-desc">الدالة الأم - النظرية الأساسية</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/" class="card" target="_blank">
-      <span class="badge p4">P4</span>
-      <span class="en-title">Yemen Atlas</span>
-      <span class="ar-title">أطلس اليمن</span>
-      <div class="repo-desc">الخرائط والمواقع الجغرافية</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/Jabri_Nobble/" class="card" target="_blank">
-      <span class="badge p5">P5</span>
-      <span class="en-title">Yemen Nobble</span>
-      <span class="ar-title">نوبل اليمن</span>
-      <div class="repo-desc">Zx_RiemannOS - مسائل الألفية</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/jabri_lab/" class="card" target="_blank">
-      <span class="badge p6">P6</span>
-      <span class="en-title">Yemen Lab</span>
-      <span class="ar-title">مختبر اليمن</span>
-      <div class="repo-desc">Zx Function & Millennium Problems</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/Zx_RieOS_v1.1/" class="card" target="_blank">
-      <span class="badge p7">P7</span>
-      <span class="en-title">Yemen Legacy</span>
-      <span class="ar-title">إرث اليمن</span>
-      <div class="repo-desc">v1.1 التحقق العددي</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/Jabri-RiemannOS/" class="card" target="_blank">
-      <span class="badge p8">P8</span>
-      <span class="en-title">Yemen Riemann</span>
-      <span class="ar-title">ريمان اليمن</span>
-      <div class="repo-desc">Framework v1.3 فرضية ريمان</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/Jabri_Checkout/" class="card" target="_blank">
-      <span class="badge p9">P9</span>
-      <span class="en-title">Yemen Test</span>
-      <span class="ar-title">اختبار اليمن</span>
-      <div class="repo-desc">Testing Scripts</div>
-    </a>
-    
-    <a href="https://jabri-web.github.io/Jabri-web/" class="card" target="_blank">
-      <span class="badge p10">P10</span>
-      <span class="en-title">Pages Hub</span>
-      <span class="ar-title">المركز الرئيسي</span>
-      <div class="repo-desc">كل المشاريع والأبحاث</div>
-    </a>
-  </div>
+    <!-- ============================================ -->
+    <!--              賲丨鬲賵賶 丕賱氐賮丨丞 (Yemen-library)    -->
+    <!-- ============================================ -->
 
-  <h2 class="section-title">📄 الأبحاث المنشورة DOI</h2>
-  <ul class="paper-list">
-    <li><b>Riemann Hypothesis</b> - <a href="https://doi.org/10.5281/zenodo.20139904" class="paper-doi" target="_blank">10.5281/zenodo.20139904</a></li>
-    <li><b>P vs NP</b> - <a href="https://doi.org/10.5281/zenodo.20145279" class="paper-doi" target="_blank">10.5281/zenodo.20145279</a></li>
-    <li><b>Yang-Mills Mass Gap</b> - <a href="https://doi.org/10.5281/zenodo.20148344" class="paper-doi" target="_blank">10.5281/zenodo.20148344</a></li>
-    <li><b>Navier-Stokes</b> - <a href="https://doi.org/10.5281/zenodo.20149618" class="paper-doi" target="_blank">10.5281/zenodo.20149618</a></li>
-    <li><b>Jabri Identity</b> - <a href="https://doi.org/10.5281/zenodo.20114317" class="paper-doi" target="_blank">10.5281/zenodo.20114317</a></li>
-  </ul>
+    <main class="library-container">
 
-  <h2 class="section-title">📞 التواصل</h2>
-  <ul class="contact-list">
-    <li><b>الاسم:</b> م. عبدالله محمد ناصر الجبري</li>
-    <li><b>ORCID:</b> <a href="https://orcid.org/0009-0003-3319-3822" target="_blank">0009-0003-3319-3822</a></li>
-    <li><b>Email:</b> <a href="mailto:jabri.2018@gmail.com">jabri.2018@gmail.com</a></li>
-    <li><b>Website:</b> <a href="https://jabri-web.github.io/" target="_blank">jabri-web.github.io</a></li>
-    <li><b>Website:</b> <a href="https://jabri62018.github.io/" target="_blank">jabri62018.github.io</a></li>
-  </ul>
+        <div class="library-inner">
 
-  <div class="footer-text">From Sana'a to the Universe <br> من صنعاء إلى الكون © 2026</div>
+            <!-- 丕賱賲賱賮 丕賱卮禺氐賷 -->
+            <div class="profile-header">
+                <img src="Image/Jabri-photo.png" alt="Eng. Abdulla Al-Jabri" class="profile-img">
+                <h1 class="profile-name">
+                    <span class="ar-text">賲. 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷</span>
+                    <span class="en-text">Eng. Abdulla M. N. Al-Jabri</span>
+                </h1>
+                <h2 class="profile-name-ar">
+                    <span class="ar-text">賵丕丨丞 丕賱噩亘乇賷 | Heaven Al-Jabri</span>
+                    <span class="en-text">Heaven Al-Jabri</span>
+                </h2>
+                <p class="profile-title">
+                    <span class="ar-text">亘丕丨孬 賲爻鬲賯賱 賮賷 丕賱乇賷丕囟賷丕鬲 賵丕賱賮賷夭賷丕亍 丕賱賳馗乇賷丞</span>
+                    <span class="en-text">Independent Researcher in Mathematics & Theoretical Physics</span>
+                </p>
+                <p class="profile-title" style="color:#6ae3ff;font-weight:600;">
+                    <span class="ar-text">馃惁 卮毓丕乇 丕賱亘丨孬: 爻賳丿亘丕丿 + Zx</span>
+                    <span class="en-text">馃惁 Research Motto: Sindbad + Zx</span>
+                </p>
+            </div>
 
-</div>
+            <!-- ===== 賯賵丕毓丿 丕賱亘賷丕賳丕鬲 1 鈫� 12 ===== -->
+            <h2 class="section-title">
+                <i class="fas fa-database"></i>
+                <span class="ar-text">賯賵丕毓丿 亘賷丕賳丕鬲 丕賱賷賲賳 1 鈫� 12</span>
+                <span class="en-text">Yemen Databases 1 鈫� 12</span>
+            </h2>
+
+            <div class="grid">
+                <!-- P1 -->
+                <a href="Jabri.html" class="card">
+                    <span class="badge p1">P1</span>
+                    <span class="en-title">Yemen Sindbad</span>
+                    <span class="ar-title">爻賳丿亘丕丿 丕賱賷賲賳</span>
+                    <div class="repo-desc"><span class="ar-text">亘丨孬 乇賷丕囟賷丕鬲 丕賱賮賷夭賷丕亍 丕賱賰賵賳賷丞</span><span class="en-text">Cosmic Physics Mathematics</span></div>
+                </a>
+
+                <!-- P2 -->
+                <a href="Jabr.html" class="card">
+                    <span class="badge p2">P2</span>
+                    <span class="en-title">Yemen Bird</span>
+                    <span class="ar-title">胤丕卅乇 丕賱賷賲賳</span>
+                    <div class="repo-desc"><span class="ar-text">賳馗丕賲 Zx_RieOS v1.2</span><span class="en-text">Zx_RieOS System v1.2</span></div>
+                </a>
+
+                <!-- P3 -->
+                <a href="Baleegh.html" class="card">
+                    <span class="badge p3">P3</span>
+                    <span class="en-title">Yemen Ankboot</span>
+                    <span class="ar-title">毓賳賰亘賵鬲 丕賱賷賲賳</span>
+                    <div class="repo-desc"><span class="ar-text">丕賱丿丕賱丞 丕賱兀賲 - Zx Function</span><span class="en-text">Mother Function - Zx</span></div>
+                </a>
+
+                <!-- P4 -->
+                <a href="Office.html" class="card">
+                    <span class="badge p4">P4</span>
+                    <span class="en-title">Yemen Atlas</span>
+                    <span class="ar-title">兀胤賱爻 丕賱賷賲賳</span>
+                    <div class="repo-desc"><span class="ar-text">丕賱賮賴乇爻 丕賱毓丕賲 賱賱賲卮丕乇賷毓</span><span class="en-text">General Projects Index</span></div>
+                </a>
+
+                <!-- P5 -->
+                <a href="Jabri_Nobble.html" class="card">
+                    <span class="badge p5">P5</span>
+                    <span class="en-title">Yemen Nobble</span>
+                    <span class="ar-title">兀乇卮賷賮 賳賵亘賱</span>
+                    <div class="repo-desc"><span class="ar-text">Zx_RiemannOS - 賳馗丕賲 乇賷賲丕賳</span><span class="en-text">Zx_RiemannOS - Riemann System</span></div>
+                </a>
+
+                <!-- P6 -->
+                <a href="Jabri_lab.html" class="card">
+                    <span class="badge p6">P6</span>
+                    <span class="en-title">Yemen Lab</span>
+                    <span class="ar-title">賲禺鬲亘乇 丕賱賷賲賳</span>
+                    <div class="repo-desc">Zx Function & Millennium Problems</div>
+                </a>
+
+                <!-- P7 -->
+                <a href="Code-os.html" class="card">
+                    <span class="badge p7">P7</span>
+                    <span class="en-title">Yemen Legacy</span>
+                    <span class="ar-title">廿乇孬 丕賱賷賲賳</span>
+                    <div class="repo-desc"><span class="ar-text">v1.1 丕賱賳馗丕賲 丕賱賯丿賷賲</span><span class="en-text">v1.1 Legacy System</span></div>
+                </a>
+
+                <!-- P8 -->
+                <a href="Code.html" class="card">
+                    <span class="badge p8">P8</span>
+                    <span class="en-title">Yemen Riemann</span>
+                    <span class="ar-title">乇賷賲丕賳 丕賱賷賲賳</span>
+                    <div class="repo-desc"><span class="ar-text">Framework v1.3 賳馗丕賲 乇賷賲丕賳</span><span class="en-text">Framework v1.3 Riemann System</span></div>
+                </a>
+
+                <!-- P9 -->
+                <a href="Check.html" class="card">
+                    <span class="badge p9">P9</span>
+                    <span class="en-title">Yemen Test</span>
+                    <span class="ar-title">賲禺鬲亘乇 丕賱賷賲賳</span>
+                    <div class="repo-desc">Testing Scripts</div>
+                </a>
+
+                <!-- P10 -->
+                <a href="Router-all.html" class="card">
+                    <span class="badge p10">P10</span>
+                    <span class="en-title">Pages Hub</span>
+                    <span class="ar-title">賲乇賰夭 丕賱氐賮丨丕鬲</span>
+                    <div class="repo-desc"><span class="ar-text">賰賱 氐賮丨丕鬲 丕賱賲卮丕乇賷毓</span><span class="en-text">All Project Pages</span></div>
+                </a>
+
+                <!-- P11 - Jabri-com (丕賱氐賮丨丞 丕賱乇卅賷爻賷丞) -->
+                <a href="index.html" class="card">
+                    <span class="badge p11">P11</span>
+                    <span class="en-title">Jabri-com</span>
+                    <span class="ar-title">丕賱乇卅賷爻賷丞</span>
+                    <div class="repo-desc"><span class="ar-text">丕賱氐賮丨丞 丕賱乇卅賷爻賷丞 賱賱賵丕丨丞</span><span class="en-text">Main Oasis Homepage</span></div>
+                </a>
+
+                <!-- P12 - jabri.com (丕賱賳胤丕賯 丕賱乇爻賲賷) -->
+                <a href="https://jabri.com" target="_blank" class="card card-highlight">
+                    <span class="badge p12">P12</span>
+                    <span class="en-title">jabri.com</span>
+                    <span class="ar-title">丕賱賳胤丕賯 丕賱乇爻賲賷</span>
+                    <div class="repo-desc"><span class="ar-text">馃寪 丕賱賲賵賯毓 丕賱乇爻賲賷 賱賱亘丕丨孬</span><span class="en-text">馃寪 Official Researcher Domain</span></div>
+                </a>
+            </div>
+
+            <!-- ===== 丕賱兀亘丨丕孬 丕賱賲爻噩賱丞 ===== -->
+            <h2 class="section-title">
+                <i class="fas fa-file-alt"></i>
+                <span class="ar-text">兀亘丨丕孬 賲爻噩賱丞 DOI</span>
+                <span class="en-text">Registered Researches DOI</span>
+            </h2>
+
+            <ul class="paper-list">
+                <li><b>Riemann Hypothesis</b> - <a href="https://doi.org/10.5281/zenodo.20139904" class="paper-doi" target="_blank"><i class="fas fa-external-link-alt"></i> 10.5281/zenodo.20139904</a></li>
+                <li><b>P vs NP</b> - <a href="https://doi.org/10.5281/zenodo.20145279" class="paper-doi" target="_blank"><i class="fas fa-external-link-alt"></i> 10.5281/zenodo.20145279</a></li>
+                <li><b>Yang-Mills Mass Gap</b> - <a href="https://doi.org/10.5281/zenodo.20148344" class="paper-doi" target="_blank"><i class="fas fa-external-link-alt"></i> 10.5281/zenodo.20148344</a></li>
+                <li><b>Navier-Stokes</b> - <a href="https://doi.org/10.5281/zenodo.20149618" class="paper-doi" target="_blank"><i class="fas fa-external-link-alt"></i> 10.5281/zenodo.20149618</a></li>
+                <li><b>Birch & Swinnerton-Dyer</b> - <a href="https://doi.org/10.5281/zenodo.20145337" class="paper-doi" target="_blank"><i class="fas fa-external-link-alt"></i> 10.5281/zenodo.20145337</a></li>
+                <li><b>Hodge Conjecture</b> - <a href="https://doi.org/10.5281/zenodo.20114317" class="paper-doi" target="_blank"><i class="fas fa-external-link-alt"></i> 10.5281/zenodo.20114317</a></li>
+                <li><b>Jabri Identity</b> - <a href="https://doi.org/10.5281/zenodo.20100622" class="paper-doi" target="_blank"><i class="fas fa-external-link-alt"></i> 10.5281/zenodo.20100622</a></li>
+            </ul>
+
+            <!-- ===== 賲毓賱賵賲丕鬲 丕賱鬲賵丕氐賱 ===== -->
+            <h2 class="section-title">
+                <i class="fas fa-address-card"></i>
+                <span class="ar-text">亘賷丕賳丕鬲 丕賱鬲賵丕氐賱</span>
+                <span class="en-text">Contact Info</span>
+            </h2>
+
+            <ul class="contact-list">
+                <li><b><span class="ar-text">丕賱亘丕丨孬:</span><span class="en-text">Researcher:</span></b> <span class="ar-text">賲. 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷</span><span class="en-text">Eng. Abdulla Mohammed Nasser Al-Jabri</span></li>
+                <li><b>ORCID:</b> <a href="https://orcid.org/0009-0003-3319-3822" target="_blank"><i class="fas fa-id-card"></i> 0009-0003-3319-3822</a></li>
+                <li><b>Email:</b> <a href="mailto:jabri62018@gmail.com"><i class="fas fa-envelope"></i> jabri62018@gmail.com</a></li>
+                <li><b>GitHub:</b> <a href="https://github.com/jabri-web" target="_blank"><i class="fab fa-github"></i> jabri-web</a></li>
+                <li><b>Website:</b> <a href="Router-all.html" target="_blank"><i class="fas fa-globe"></i> jabri-web.github.io</a></li>
+                <li><b>Official Domain:</b> <a href="https://jabri.com" target="_blank"><i class="fas fa-globe"></i> jabri.com</a></li>
+            </ul>
+
+            <div class="footer-text">
+                <span class="ar-text">馃嚲馃嚜 賲賳 氐賳毓丕亍 廿賱賶 丕賱賰賵賳</span>
+                <span class="en-text">馃嚲馃嚜 From Sana'a to the Universe</span>
+                <br>漏 2026 賲/ 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!--                丕賱賮賵鬲乇 (丕賱鬲匕賷賷賱)              -->
+    <!-- ============================================ -->
+
+    <footer id="site-footer">
+
+        <div class="footer-search">
+            <p id="searchTitle"><strong>馃攳 丕賱亘丨孬 毓賳 丕賱亘丕丨孬:</strong></p>
+            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+                <a href="https://www.google.com/search?q=賵丕丨丞+丕賱噩亘乇賷&udm=50" target="_blank" rel="noopener">馃彌锔� <span class="txt" data-ar="亘丨孬 毓賳 賵丕丨丞 丕賱噩亘乇賷" data-en="Search Al-Jabri Oasis">亘丨孬 毓賳 賵丕丨丞 丕賱噩亘乇賷</span></a>
+                <a href="https://www.google.com/search?q=賵丕丨丞+丕賱噩亘乇賷+|+Heaven+Al-Jabri&udm=50" target="_blank" rel="noopener">馃彌锔� <span class="txt" data-ar="亘丨孬 丕賳噩賱賷夭賷" data-en="Search in English">亘丨孬 丕賳噩賱賷夭賷</span></a>
+                <a href="https://www.google.com/search?q=賲賴賳丿爻+毓亘丿丕賱賱賴+賲丨賲丿+賳丕氐乇+丕賱噩亘乇賷&udm=50" target="_blank" rel="noopener">馃懆鈥嶐煍� <span class="txt" data-ar="亘丨孬 毓賳 毓亘丿丕賱賱賴 丕賱噩亘乇賷" data-en="Search Abdulla Al-Jabri">亘丨孬 毓賳 毓亘丿丕賱賱賴 丕賱噩亘乇賷</span></a>
+                <a href="https://www.google.com/search?q=Eng.+Abdulla+Mohammed+Nasser+Al-Jabri&udm=50" target="_blank" rel="noopener">馃攷 <span class="txt" data-ar="亘丨孬 亘丕賱丕賳噩賱賷夭賷" data-en="Search in English">亘丨孬 亘丕賱丕賳噩賱賷夭賷</span></a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://orcid.org/0009-0003-3319-3822" target="_blank" rel="noopener">馃啍 <span class="txt" data-ar="ORCID" data-en="ORCID">ORCID</span></a>
+            <a href="https://zenodo.org/records/20513840" target="_blank" rel="noopener">馃搳 <span class="txt" data-ar="夭賷賳賵丿賵" data-en="Zenodo">Zenodo</span></a>
+            <a href="https://overleaf.com/project" target="_blank" rel="noopener">馃摑 <span class="txt" data-ar="丕賵賮乇賱賷賮" data-en="Overleaf">Overleaf</span></a>
+            <a href="https://colab.research.google.com/drive/12oG9B7DgsQpTWlvfMm4awnpbt34yPv_h" target="_blank" rel="noopener">馃 <span class="txt" data-ar="賰賵賱丕亘" data-en="Colab">Colab</span></a>
+            <a href="https://github.com/jabri-web" target="_blank" rel="noopener">馃悪 <span class="txt" data-ar="噩賷鬲賴丕亘" data-en="GitHub">GitHub</span></a>
+            <a href="https://en.wikipedia.org/wiki/User:Jabri2026" target="_blank" rel="noopener">馃摉 <span class="txt" data-ar="賵賷賰賷亘賷丿賷丕" data-en="Wikipedia">Wikipedia</span></a>
+            <a href="mailto:jabri62018@gmail.com">馃摟 <span class="txt" data-ar="丕賱亘乇賷丿" data-en="Email">Email</span></a>
+            <a href="Author-cv.html">馃搫 <span class="txt" data-ar="丕賱爻賷乇丞 丕賱匕丕鬲賷丞" data-en="C.V">C.V</span></a>
+            <a href="citations.html">鈾伙笍 <span class="txt" data-ar="丕賱丕爻鬲卮賴丕丿丕鬲" data-en="Citations">Citations</span></a>
+            <a href="source.html">馃摐 <span class="txt" data-ar="丕賱賲氐丕丿乇" data-en="Source">Source</span></a>
+            <a href="about.html">鈩癸笍 <span class="txt" data-ar="毓賳 丕賱賲賵賯毓" data-en="About">About</span></a>
+            <a href="who-we.html">馃懃 <span class="txt" data-ar="賲賳 賳丨賳" data-en="Who We Are">賲賳 賳丨賳</span></a>
+            <a href="sitemap.html">馃椇锔� <span class="txt" data-ar="禺丕乇胤丞 丕賱賲賵賯毓" data-en="Sitemap">禺丕乇胤丞 丕賱賲賵賯毓</span></a>
+        </div>
+
+        <p id="copyright">漏 2026 賲/ 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷 - 噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞</p>
+
+    </footer>
+
+    <!-- ============================================ -->
+    <!--                丕賱爻賰乇賷亘鬲丕鬲                    -->
+    <!-- ============================================ -->
+
+    <script>
+        function updateFooterLang() {
+            const isEnglish = document.documentElement.lang === 'en';
+            const footer = document.getElementById('site-footer');
+            if (footer) footer.dir = isEnglish ? "ltr" : "rtl";
+
+            const searchTitle = document.getElementById('searchTitle');
+            if (searchTitle) {
+                searchTitle.innerHTML = isEnglish ?
+                    "<strong>馃攳 Search for Researcher:</strong>" :
+                    "<strong>馃攳 丕賱亘丨孬 毓賳 丕賱亘丕丨孬:</strong>";
+            }
+
+            const copyright = document.getElementById('copyright');
+            if (copyright) {
+                copyright.textContent = isEnglish ?
+                    "漏 2026 Eng. Abdulla Mohammed Nasser Al-Jabri - All Rights Reserved" :
+                    "漏 2026 賲/ 毓亘丿丕賱賱賴 賲丨賲丿 賳丕氐乇 丕賱噩亘乇賷 - 噩賲賷毓 丕賱丨賯賵賯 賲丨賮賵馗丞";
+            }
+
+            document.querySelectorAll('#site-footer .txt').forEach(el => {
+                const newText = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-ar');
+                if (newText) el.textContent = newText;
+            });
+        }
+
+        window.updateFooterLang = updateFooterLang;
+
+        function applyLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+            document.body.classList.remove('ar', 'en');
+            document.body.classList.add(lang);
+
+            const langAr = document.getElementById('lang-ar');
+            const langEn = document.getElementById('lang-en');
+            if (langAr) langAr.classList.toggle('active', lang === 'ar');
+            if (langEn) langEn.classList.toggle('active', lang === 'en');
+
+            if (typeof updateFooterLang === 'function') updateFooterLang();
+
+            localStorage.setItem('preferred-language', lang);
+        }
+
+        window.toggleLang = function() {
+            const currentLang = document.documentElement.lang || 'ar';
+            const newLang = currentLang === 'en' ? 'ar' : 'en';
+            applyLanguage(newLang);
+        };
+
+        window.applyLanguage = applyLanguage;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferred-language') || 'ar';
+            applyLanguage(savedLang);
+        });
+    </script>
+
+    <script src="/js/init-page-root.js"></script>
+    <script src="/js/menu.js"></script>
+
 </body>
 </html>
